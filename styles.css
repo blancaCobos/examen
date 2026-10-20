@@ -1,157 +1,63 @@
-:root {
-    --hacker-green: #00ff41;
-    --hacker-bg: #0d1117;
-    --hacker-card: #161b22;
-    --hacker-border: #30363d;
-    --hacker-hover: #1f2428;
-}
-
 body {
-    font-family: 'Fira Code', monospace;
-    background-color: var(--hacker-bg) !important;
-    color: #c9d1d9;
+    background-color: #f8f9fa;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
 }
 
-/* Tipografía y acentos */
-.hacker-title {
-    color: var(--hacker-green);
-    text-shadow: 0 0 5px rgba(0, 255, 65, 0.4);
-    letter-spacing: -1px;
-}
-
-.card {
-    background-color: var(--hacker-card) !important;
-    border: 1px solid var(--hacker-border);
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-}
-
-.hacker-border {
-    border: 1px solid var(--hacker-green);
-    box-shadow: 0 0 10px rgba(0, 255, 65, 0.1);
-}
-
-/* Instrucciones (Alert) */
-.hacker-alert {
-    background-color: rgba(0, 255, 65, 0.05);
-    border: 1px dashed var(--hacker-green);
-    border-radius: 4px;
-}
-
-/* Temporizador intermitente */
+/* Temporizador */
 .text-danger-timer {
-    color: #ff3333 !important;
-    text-shadow: 0 0 8px rgba(255, 51, 51, 0.8);
+    color: #dc3545 !important;
     animation: blink 1s linear infinite;
 }
+
 @keyframes blink {
-    50% { opacity: 0.2; }
+    50% { opacity: 0.5; }
 }
 
-/* Opciones de respuesta (Radio / Checkbox) */
+/* Navegación por celdas */
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.nav-btn.respondida {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+.nav-btn.marcada {
+    border: 2px solid #ffc107;
+    border-top-right-radius: 12px; 
+}
+.nav-btn.actual {
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.4);
+}
+
+/* Opciones seleccionables */
 .opcion-label {
     display: flex;
     align-items: flex-start;
-    padding: 14px 16px;
-    border: 1px solid var(--hacker-border);
+    padding: 12px;
+    border: 1px solid #dee2e6;
     border-radius: 6px;
     cursor: pointer;
-    background-color: var(--hacker-bg);
-    transition: all 0.2s ease-in-out;
-    color: #c9d1d9;
+    margin-bottom: 10px;
+    transition: background-color 0.1s;
 }
-
 .opcion-label:hover {
-    background-color: var(--hacker-hover);
-    border-color: #58a6ff;
+    background-color: #f1f3f5;
 }
-
-/* Simular selección sin depender del input nativo visualmente */
-.opcion-label:has(input:checked) {
-    background-color: rgba(0, 255, 65, 0.1);
-    border-color: var(--hacker-green);
-    color: #ffffff;
-}
-
 .opcion-label input {
-    margin-top: 5px;
-    margin-right: 12px;
-    accent-color: var(--hacker-green);
+    margin-top: 4px;
+    margin-right: 10px;
     transform: scale(1.2);
 }
 
-/* Botones de navegación de la rejilla */
-.nav-btn {
-    width: 38px;
-    height: 38px;
-    border-radius: 4px;
-    border: 1px solid var(--hacker-border);
-    background-color: var(--hacker-bg);
-    color: #8b949e;
-    font-weight: 600;
-    cursor: pointer;
-    transition: all 0.2s;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.nav-btn:hover {
-    background-color: var(--hacker-hover);
-    color: white;
-}
-
-.nav-btn.respondida {
-    background-color: rgba(0, 255, 65, 0.15);
-    color: var(--hacker-green);
-    border-color: var(--hacker-green);
-}
-
-.nav-btn.marcada {
-    border: 2px solid #ffc107;
-    color: #ffc107;
-    position: relative;
-}
-.nav-btn.marcada::after {
-    content: '';
-    position: absolute;
-    top: -4px;
-    right: -4px;
-    width: 8px;
-    height: 8px;
-    background-color: #ffc107;
-    border-radius: 50%;
-}
-
-.nav-btn.actual {
-    box-shadow: 0 0 8px #58a6ff;
-    border-color: #58a6ff;
-    color: #58a6ff;
-}
-
-/* Bloques de Revisión de Resultados */
-.revision-correcta { 
-    background-color: rgba(0, 255, 65, 0.05) !important; 
-    border: 1px solid var(--hacker-green) !important; 
-}
-.revision-incorrecta { 
-    background-color: rgba(255, 51, 51, 0.05) !important; 
-    border: 1px solid #ff3333 !important; 
-}
-.revision-neutra { 
-    background-color: var(--hacker-card) !important; 
-    border: 1px dashed var(--hacker-border) !important; 
-}
-
-/* Explicaciones en revisión */
-.revision-correcta .bg-light,
-.revision-incorrecta .bg-light,
-.revision-neutra .bg-light {
-    background-color: var(--hacker-bg) !important;
-    border: 1px solid var(--hacker-border) !important;
-    color: #8b949e !important;
-}
-
-/* Modificar botones de Bootstrap para que encajen mejor */
-.btn-outline-success, .btn-outline-danger, .btn-outline-info, .btn-outline-warning {
-    border-width: 2px;
-}
+/* Revisión */
+.revision-correcta { background-color: #d1e7dd; border-color: #badbcc; }
+.revision-incorrecta { background-color: #f8d7da; border-color: #f5c2c7; }
+.revision-neutra { background-color: #e2e3e5; border-color: #d3d6d8; }
