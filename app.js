@@ -1,5 +1,6 @@
 // --- ESTADO DE LA APLICACIÓN ---
 let bancoCompleto = [];
+let bancoDefiniciones = [];
 let examenActual = [];
 let respuestasUsuario = {}; // { indexPregunta: [indicesSeleccionados] }
 let preguntasMarcadas = new Set();
@@ -17,6 +18,8 @@ window.onload = () => {
     if (typeof preguntas4 !== 'undefined') bancoCompleto = bancoCompleto.concat(preguntas4);
     if (typeof preguntas5 !== 'undefined') bancoCompleto = bancoCompleto.concat(preguntas5);
     if (typeof preguntas6 !== 'undefined') bancoCompleto = bancoCompleto.concat(preguntas6);
+
+    if (typeof definiciones !== 'undefined') bancoDefiniciones = definiciones;
     
     actualizarBotonFalladas();
     
@@ -68,7 +71,10 @@ function iniciarExamen(modo) {
     let pool = [];
     if (modo === 'falladas') {
         const falladasIds = getFalladas();
-        pool = bancoCompleto.filter(p => falladasIds.includes(p.id));
+        // Buscar tanto en el banco normal como en definiciones
+        pool = bancoCompleto.concat(bancoDefiniciones).filter(p => falladasIds.includes(p.id));
+    } else if (modo === 'definiciones') {
+        pool = [...bancoDefiniciones]; // Usar el banco de definiciones
     } else {
         pool = bancoCompleto.filter(p => p.dificultad === modo);
     }
@@ -78,28 +84,23 @@ function iniciarExamen(modo) {
         return;
     }
 
-    // Seleccionar aleatoriamente hasta 40
     pool = barajarArray(pool);
     examenActual = pool.slice(0, 40);
 
-    // Preparar opciones barajadas para cada pregunta
     examenActual = examenActual.map(p => {
         let opcionesConIndice = p.opciones.map((opt, i) => ({ texto: opt, idxOriginal: i }));
         opcionesConIndice = barajarArray(opcionesConIndice);
         return { ...p, opcionesBarajadas: opcionesConIndice };
     });
 
-    // Resetear estado
     respuestasUsuario = {};
     preguntasMarcadas.clear();
     indiceActual = 0;
     
-    // Configurar tiempo (45 seg por pregunta)
     tiempoTotal = examenActual.length * 45; 
-    if (tiempoTotal > 1800) tiempoTotal = 1800; // Máx 30 mins
+    if (tiempoTotal > 1800) tiempoTotal = 1800; 
     tiempoRestante = tiempoTotal;
 
-    // Cambiar pantallas
     document.getElementById('pantalla-inicio').classList.add('d-none');
     document.getElementById('pantalla-examen').classList.remove('d-none');
     document.getElementById('total-preguntas').innerText = examenActual.length;
