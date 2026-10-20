@@ -245,6 +245,17 @@ function confirmarEntrega() {
     }
 }
 
+function cancelarExamen() {
+    if (confirm("⚠️ ¿Seguro que deseas abortar la misión? Se perderá todo el progreso actual y no se evaluarán las respuestas.")) {
+        // Detener el temporizador
+        clearInterval(temporizadorInterval);
+        
+        // Volver a la pantalla de inicio
+        document.getElementById('pantalla-examen').classList.add('d-none');
+        document.getElementById('pantalla-inicio').classList.remove('d-none');
+    }
+}
+
 // --- EVALUACIÓN Y RESULTADOS ---
 function finalizarExamen() {
     document.getElementById('pantalla-examen').classList.add('d-none');
