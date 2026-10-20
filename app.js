@@ -13,6 +13,9 @@ window.onload = () => {
     // Si tienes preguntas2, preguntas3, se añadirán aquí comprobando si existen
     if (typeof preguntas1 !== 'undefined') bancoCompleto = bancoCompleto.concat(preguntas1);
     if (typeof preguntas2 !== 'undefined') bancoCompleto = bancoCompleto.concat(preguntas2);
+    if (typeof preguntas3 !== 'undefined') bancoCompleto = bancoCompleto.concat(preguntas3);
+    if (typeof preguntas4 !== 'undefined') bancoCompleto = bancoCompleto.concat(preguntas4);
+    if (typeof preguntas5 !== 'undefined') bancoCompleto = bancoCompleto.concat(preguntas5);
     
     actualizarBotonFalladas();
     
