@@ -12,7 +12,7 @@ let tiempoTotal = 0;
 window.onload = () => {
     // Si tienes preguntas2, preguntas3, se añadirán aquí comprobando si existen
     if (typeof preguntas1 !== 'undefined') bancoCompleto = bancoCompleto.concat(preguntas1);
-    // if (typeof preguntas2 !== 'undefined') bancoCompleto = bancoCompleto.concat(preguntas2);
+    if (typeof preguntas2 !== 'undefined') bancoCompleto = bancoCompleto.concat(preguntas2);
     
     actualizarBotonFalladas();
     
