@@ -1,87 +1,81 @@
 <!DOCTYPE html>
-<html lang="es" data-bs-theme="dark">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simulador - Hacking Ético</title>
-    <!-- Google Fonts: Fira Code -->
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <title>Simulador de Exámenes - Hacking Ético</title>
     <!-- Bootstrap 5 CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container my-5">
+    <div class="container my-4">
         <!-- PANTALLA DE INICIO -->
-        <div id="pantalla-inicio" class="card p-5 mx-auto hacker-border" style="max-width: 800px;">
-            <div class="text-center mb-4">
-                <h1 class="hacker-title">&gt; Práctica_Examen</h1>
-                <h3 class="text-muted">Módulo: Hacking Ético</h3>
-            </div>
-            
-            <div class="alert hacker-alert mb-5">
-                <h5 class="alert-heading text-success">_Instrucciones:</h5>
-                <ul class="mb-0 text-light">
-                    <li>El examen consta de <strong>40 preguntas</strong> (o menos en repasos).</li>
-                    <li>Tienes <strong>30 minutos</strong>. Autodesconexión al llegar a 00:00.</li>
-                    <li>Posibilidad de <strong>múltiples respuestas correctas</strong> (indicado en pantalla).</li>
-                    <li><strong>Scoring:</strong> Acierto suma. Fallo penaliza (-0.33). Múltiples opciones exigen coincidencia exacta.</li>
+        <div id="pantalla-inicio" class="card shadow-sm p-4">
+            <h1 class="text-center mb-4">Práctica de Examen: Hacking Ético</h1>
+            <div class="alert alert-info">
+                <h5>Instrucciones:</h5>
+                <ul class="mb-0">
+                    <li>El examen consta de <strong>40 preguntas</strong> (o menos, en el caso de repasar falladas).</li>
+                    <li>Tienes <strong>30 minutos</strong>. El examen se entregará automáticamente al llegar a cero.</li>
+                    <li>Las preguntas pueden tener <strong>una o varias respuestas correctas</strong>. Se indicará en cada caso.</li>
+                    <li><strong>Puntuación:</strong> Acierto suma. Fallo penaliza (-0.33). En blanco no penaliza. Las preguntas de respuesta múltiple exigen marcar exactamente todas las correctas para contar como acierto.</li>
                 </ul>
             </div>
             
-            <div class="d-grid gap-3 col-md-8 mx-auto">
-                <button class="btn btn-outline-success btn-lg" onclick="iniciarExamen('media')">Ejecutar Examen [Media]</button>
-                <button class="btn btn-outline-danger btn-lg" onclick="iniciarExamen('dificil')">Ejecutar Examen [Difícil]</button>
-                <button class="btn btn-outline-info btn-lg" onclick="iniciarExamen('definiciones')">Ejecutar Examen [Definiciones]</button>
-                <button id="btn-falladas" class="btn btn-outline-warning btn-lg mt-2" onclick="iniciarExamen('falladas')" disabled>
-                    Target: Falladas (0 pendientes)
+            <div class="d-grid gap-3 col-md-6 mx-auto mt-4">
+                <button class="btn btn-primary btn-lg" onclick="iniciarExamen('media')">Iniciar Examen (Dificultad Media)</button>
+                <button class="btn btn-danger btn-lg" onclick="iniciarExamen('dificil')">Iniciar Examen (Dificultad Difícil)</button>
+                <button class="btn btn-info btn-lg text-white" onclick="iniciarExamen('definiciones')">Iniciar Examen (Solo Definiciones)</button>
+                <button id="btn-falladas" class="btn btn-warning btn-lg" onclick="iniciarExamen('falladas')" disabled>
+                    Examen de Falladas (0 pendientes)
                 </button>
-                <button class="btn btn-link text-muted btn-sm mt-2" onclick="vaciarFalladas()">[ Purgar historial de falladas ]</button>
+                <button class="btn btn-outline-secondary btn-sm" onclick="vaciarFalladas()">Vaciar lista de falladas</button>
             </div>
         </div>
 
         <!-- PANTALLA DE EXAMEN -->
         <div id="pantalla-examen" class="d-none">
-            <div class="d-flex justify-content-between align-items-center mb-3 border-bottom border-secondary pb-2">
-                <h4 class="text-success m-0">Payload <span id="num-pregunta-actual">1</span>/<span id="total-preguntas">40</span></h4>
-                <div id="temporizador" class="fw-bold fs-3 text-success font-monospace">30:00</div>
+            <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4>Pregunta <span id="num-pregunta-actual">1</span> de <span id="total-preguntas">40</span></h4>
+                <div id="temporizador" class="fw-bold fs-4 text-success">30:00</div>
             </div>
-            <div class="progress mb-4 bg-dark" style="height: 6px;">
-                <div id="barra-progreso" class="progress-bar bg-success" role="progressbar" style="width: 0%;"></div>
+            <div class="progress mb-4" style="height: 10px;">
+                <div id="barra-progreso" class="progress-bar" role="progressbar" style="width: 0%;"></div>
             </div>
 
             <div class="row">
                 <!-- Panel de Pregunta -->
                 <div class="col-lg-8 mb-4">
-                    <div class="card p-4 hacker-card h-100">
-                        <div class="d-flex justify-content-between mb-3">
-                            <span id="etiqueta-dificultad" class="badge bg-secondary font-monospace"></span>
-                            <button id="btn-marcar" class="btn btn-sm btn-outline-warning font-monospace" onclick="marcarParaRevision()">[ ] Flag</button>
+                    <div class="card shadow-sm p-4">
+                        <div class="d-flex justify-content-between mb-2">
+                            <span id="etiqueta-dificultad" class="badge"></span>
+                            <button id="btn-marcar" class="btn btn-sm btn-outline-warning" onclick="marcarParaRevision()">Marcar para revisión 📌</button>
                         </div>
-                        <h5 id="enunciado-pregunta" class="mb-4 text-light lh-base"></h5>
-                        <p id="aviso-multiple" class="text-info small d-none fw-bold">&gt; Selecciona todos los vectores correctos.</p>
+                        <h5 id="enunciado-pregunta" class="mb-3"></h5>
+                        <p id="aviso-multiple" class="text-muted small d-none fw-bold">Selecciona todas las correctas (checkbox).</p>
                         
-                        <div id="opciones-contenedor" class="mb-4 d-flex flex-column gap-2">
-                            <!-- Inyectado por JS -->
+                        <div id="opciones-contenedor" class="mb-4">
+                            <!-- Las opciones se inyectan por JS -->
                         </div>
 
-                        <div class="d-flex justify-content-between mt-auto pt-3">
-                            <button class="btn btn-secondary font-monospace" id="btn-anterior" onclick="cambiarPregunta(-1)">&lt; Prev</button>
-                            <button class="btn btn-success font-monospace" id="btn-siguiente" onclick="cambiarPregunta(1)">Next &gt;</button>
+                        <div class="d-flex justify-content-between mt-4">
+                            <button class="btn btn-secondary" id="btn-anterior" onclick="cambiarPregunta(-1)">Anterior</button>
+                            <button class="btn btn-primary" id="btn-siguiente" onclick="cambiarPregunta(1)">Siguiente</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Panel de Navegación -->
                 <div class="col-lg-4">
-                    <div class="card p-4 hacker-card h-100">
-                        <h6 class="text-center mb-4 text-success font-monospace">_Navegación</h6>
+                    <div class="card shadow-sm p-3">
+                        <h6 class="text-center mb-3">Navegación</h6>
                         <div id="rejilla-navegacion" class="d-flex flex-wrap gap-2 justify-content-center">
-                            <!-- Inyectado por JS -->
+                            <!-- Botones numéricos por JS -->
                         </div>
-                        <hr class="border-secondary my-4">
-                        <div class="d-grid mt-auto">
-                            <button class="btn btn-danger font-monospace text-uppercase" onclick="confirmarEntrega()">Ejecutar_Entrega()</button>
+                        <hr>
+                        <div class="d-grid">
+                            <button class="btn btn-success" onclick="confirmarEntrega()">Entregar Examen</button>
                         </div>
                     </div>
                 </div>
@@ -90,42 +84,42 @@
 
         <!-- PANTALLA DE RESULTADOS -->
         <div id="pantalla-resultados" class="d-none">
-            <div class="card p-5 mb-4 text-center hacker-card hacker-border">
-                <h2 class="mb-4 hacker-title text-success">_Reporte_Final_</h2>
-                <div class="row justify-content-center g-3">
+            <div class="card shadow-sm p-4 mb-4 text-center">
+                <h2 class="mb-3">Resultado del Examen</h2>
+                <div class="row justify-content-center">
                     <div class="col-md-3">
-                        <div class="p-4 border border-secondary rounded bg-dark">
-                            <h2 id="res-nota" class="text-light">--/10</h2>
-                            <small class="text-success font-monospace">Score</small>
+                        <div class="p-3 border rounded bg-light">
+                            <h3 id="res-nota">--/10</h3>
+                            <small>Nota final</small>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="p-4 border border-secondary rounded bg-dark">
-                            <h2 id="res-aciertos" class="text-success">--</h2>
-                            <small class="text-success font-monospace">Hits</small>
+                        <div class="p-3 border rounded bg-light">
+                            <h3 id="res-aciertos" class="text-success">--</h3>
+                            <small>Aciertos</small>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="p-4 border border-secondary rounded bg-dark">
-                            <h2 id="res-fallos" class="text-danger">--</h2>
-                            <small class="text-success font-monospace">Misses</small>
+                        <div class="p-3 border rounded bg-light">
+                            <h3 id="res-fallos" class="text-danger">--</h3>
+                            <small>Fallos</small>
                         </div>
                     </div>
                     <div class="col-md-3">
-                        <div class="p-4 border border-secondary rounded bg-dark">
-                            <h2 id="res-tiempo" class="text-info">--:--</h2>
-                            <small class="text-success font-monospace">Time_Elapsed</small>
+                        <div class="p-3 border rounded bg-light">
+                            <h3 id="res-tiempo">--:--</h3>
+                            <small>Tiempo empleado</small>
                         </div>
                     </div>
                 </div>
-                <div class="mt-5">
-                    <button class="btn btn-outline-success font-monospace" onclick="volverInicio()">cd ~/</button>
+                <div class="mt-4">
+                    <button class="btn btn-primary" onclick="volverInicio()">Volver al Inicio</button>
                 </div>
             </div>
 
-            <h4 class="text-success mb-3 font-monospace">_Logs_de_Revisión:</h4>
+            <h4>Revisión de preguntas</h4>
             <div id="contenedor-revision" class="mt-3">
-                <!-- Inyectado por JS -->
+                <!-- La revisión se inyecta aquí -->
             </div>
         </div>
     </div>
