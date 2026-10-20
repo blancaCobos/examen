@@ -245,15 +245,34 @@ function confirmarEntrega() {
     }
 }
 
+let cancelarPendiente = false;
+
 function cancelarExamen() {
-    if (confirm("⚠️ ¿Seguro que deseas abortar la misión? Se perderá todo el progreso actual y no se evaluarán las respuestas.")) {
-        // Detener el temporizador
-        clearInterval(temporizadorInterval);
-        
-        // Volver a la pantalla de inicio
-        document.getElementById('pantalla-examen').classList.add('d-none');
-        document.getElementById('pantalla-inicio').classList.remove('d-none');
+    const btn = document.querySelector('button[onclick="cancelarExamen()"]');
+
+    if (!cancelarPendiente) {
+        // Primer clic: pedir confirmación en el propio botón
+        cancelarPendiente = true;
+        btn.innerText = "⚠️ ¿Seguro? Pulsa otra vez para abortar";
+        btn.classList.replace('btn-outline-secondary', 'btn-danger');
+
+        // Si no confirma en 4 segundos, se restaura
+        setTimeout(() => {
+            cancelarPendiente = false;
+            btn.innerText = "Abortar Misión";
+            btn.classList.replace('btn-danger', 'btn-outline-secondary');
+        }, 4000);
+        return;
     }
+
+    // Segundo clic: abortar de verdad
+    cancelarPendiente = false;
+    btn.innerText = "Abortar Misión";
+    btn.classList.replace('btn-danger', 'btn-outline-secondary');
+
+    clearInterval(temporizadorInterval);
+    document.getElementById('pantalla-examen').classList.add('d-none');
+    document.getElementById('pantalla-inicio').classList.remove('d-none');
 }
 
 // --- EVALUACIÓN Y RESULTADOS ---
