@@ -1,0 +1,63 @@
+body {
+    background-color: #f8f9fa;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Temporizador */
+.text-danger-timer {
+    color: #dc3545 !important;
+    animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+    50% { opacity: 0.5; }
+}
+
+/* Navegación por celdas */
+.nav-btn {
+    width: 40px;
+    height: 40px;
+    border-radius: 4px;
+    border: 1px solid #dee2e6;
+    background-color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+.nav-btn.respondida {
+    background-color: #0d6efd;
+    color: white;
+    border-color: #0d6efd;
+}
+.nav-btn.marcada {
+    border: 2px solid #ffc107;
+    border-top-right-radius: 12px; 
+}
+.nav-btn.actual {
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.4);
+}
+
+/* Opciones seleccionables */
+.opcion-label {
+    display: flex;
+    align-items: flex-start;
+    padding: 12px;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    cursor: pointer;
+    margin-bottom: 10px;
+    transition: background-color 0.1s;
+}
+.opcion-label:hover {
+    background-color: #f1f3f5;
+}
+.opcion-label input {
+    margin-top: 4px;
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* Revisión */
+.revision-correcta { background-color: #d1e7dd; border-color: #badbcc; }
+.revision-incorrecta { background-color: #f8d7da; border-color: #f5c2c7; }
+.revision-neutra { background-color: #e2e3e5; border-color: #d3d6d8; }
