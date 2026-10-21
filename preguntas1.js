@@ -267,16 +267,16 @@ const preguntas1 = [
     },
     {
         id: "p020",
-        tema: "Glosario (Redes Inalámbricas)",
+        tema: "Glosario (UD1)",
         dificultad: "dificil",
-        enunciado: "¿Qué es el 'Evil Twin' y con qué herramienta se asocia frecuentemente en pruebas de laboratorio de la UD2?",
+        enunciado: "En un test de intrusión, ¿qué define el 'Scope' (alcance) y qué implica salirse del mismo?",
         opciones: [
-            "Un cifrado Wi-Fi obsoleto que ha sido superado por WPA3, asociado a airodump-ng.",
-            "Un ataque de saturación (jamming) para denegar el servicio, provocado con Nmap.",
-            "Un punto de acceso falso que imita a uno legítimo para robar credenciales, montado típicamente con airgeddon.",
-            "Un componente de Metasploit para explotar Bluetooth Low Energy."
+            "Es el conjunto de activos, técnicas y tiempos autorizados; salirse de él puede suponer un delito.",
+            "Es la puntuación CVSS máxima permitida; salirse implica un falso positivo.",
+            "Es el tiempo límite del examen; salirse de él requiere reiniciar la máquina.",
+            "Es el contrato económico; salirse de él solo implica una penalización financiera."
         ],
-        correctas: [2],
-        explicacion: "Un Evil Twin es un punto de acceso falso que imita a uno legítimo para que las víctimas se conecten a él y capture credenciales; en el laboratorio se monta típicamente utilizando airgeddon[cite: 28]."
+        correctas: [0],
+        explicacion: "El alcance (scope) es el conjunto de activos, técnicas y tiempos que la autorización permite probar[cite: 50]. Salirse de él supone el suspenso en el curso y, en la realidad, un delito[cite: 51]."
     }
 ];
