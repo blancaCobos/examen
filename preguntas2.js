@@ -11,7 +11,7 @@ const preguntas2 = [
             "Red Hat"
         ],
         correctas: [1],
-        explicacion: "El Green Hat es un novato motivado por aprender y llegar a ser profesional de la seguridad[cite: 4]."
+        explicacion: "El Green Hat es un novato motivado por aprender y llegar a ser profesional de la seguridad."
     },
     {
         id: "p022",
@@ -25,7 +25,7 @@ const preguntas2 = [
             "Un 'Insider' siempre es un atacante externo que usa ingeniería social."
         ],
         correctas: [1, 2],
-        explicacion: "El Hacktivista actúa como protesta y el Hacker suicida ataca sin importar las consecuencias[cite: 4]. El Script kiddie compromete sistemas usando scripts de otros por falta de habilidad, y el Insider es un empleado o persona de confianza, no un atacante externo[cite: 4, 5]."
+        explicacion: "El Hacktivista actúa como protesta y el Hacker suicida ataca sin importar las consecuencias. El Script kiddie compromete sistemas usando scripts de otros por falta de habilidad, y el Insider es un empleado o persona de confianza, no un atacante externo[cite: 4, 5]."
     },
     {
         id: "p023",
@@ -39,7 +39,7 @@ const preguntas2 = [
             "Fase 3: Obtención de acceso"
         ],
         correctas: [1],
-        explicacion: "La Enumeración, que pertenece a la Fase 1 junto con footprinting y escaneo, establece conexiones activas para obtener listas de usuarios, recursos compartidos, grupos, etc.[cite: 8]."
+        explicacion: "La Enumeración, que pertenece a la Fase 1 junto con footprinting y escaneo, establece conexiones activas para obtener listas de usuarios, recursos compartidos, grupos, etc.."
     },
     {
         id: "p024",
@@ -53,7 +53,7 @@ const preguntas2 = [
             "IoC de red: ejecución remota de comandos."
         ],
         correctas: [1, 2],
-        explicacion: "Los IoC basados en host incluyen ficheros, registros y mutex[cite: 10]. Los IoC de correo incluyen remitente, adjuntos y enlaces[cite: 10]. Las URL y dominios son de red, y la ejecución remota de comandos es de comportamiento[cite: 10]."
+        explicacion: "Los IoC basados en host incluyen ficheros, registros y mutex. Los IoC de correo incluyen remitente, adjuntos y enlaces. Las URL y dominios son de red, y la ejecución remota de comandos es de comportamiento."
     },
     {
         id: "p025",
@@ -67,7 +67,7 @@ const preguntas2 = [
             "PTES"
         ],
         correctas: [1],
-        explicacion: "OWASP, concretamente su guía WSTG, es la metodología de referencia para la auditoría de aplicaciones web[cite: 11]."
+        explicacion: "OWASP, concretamente su guía WSTG, es la metodología de referencia para la auditoría de aplicaciones web."
     },
     {
         id: "p026",
@@ -81,7 +81,7 @@ const preguntas2 = [
             "Se realizan parches automáticos en los sistemas heredados."
         ],
         correctas: [2],
-        explicacion: "La 'Evaluación de riesgos' es la fase donde se estima la probabilidad y el impacto, y se asignan prioridades para la mitigación usando valores cuantitativos y cualitativos[cite: 15]."
+        explicacion: "La 'Evaluación de riesgos' es la fase donde se estima la probabilidad y el impacto, y se asignan prioridades para la mitigación usando valores cuantitativos y cualitativos."
     },
     {
         id: "p027",
@@ -95,7 +95,7 @@ const preguntas2 = [
             "Gestión de incidentes"
         ],
         correctas: [2],
-        explicacion: "La defensa en profundidad implementa múltiples capas de protección en todo el sistema, minimizando el impacto si una capa es superada[cite: 13]."
+        explicacion: "La defensa en profundidad implementa múltiples capas de protección en todo el sistema, minimizando el impacto si una capa es superada."
     },
     {
         id: "p028",
@@ -123,7 +123,7 @@ const preguntas2 = [
             "Estima exclusivamente la probabilidad de explotación, ignorando el impacto."
         ],
         correctas: [0, 1],
-        explicacion: "CVSS v4.0 puntúa la gravedad de 0 a 10 e incluye métricas base, de amenaza, de entorno y suplementarias[cite: 18]. Un 7.5 corresponde a severidad 'Alta', y la probabilidad pura de explotación la mide EPSS, no CVSS[cite: 18]."
+        explicacion: "CVSS v4.0 puntúa la gravedad de 0 a 10 e incluye métricas base, de amenaza, de entorno y suplementarias. Un 7.5 corresponde a severidad 'Alta', y la probabilidad pura de explotación la mide EPSS, no CVSS."
     },
     {
         id: "p030",
@@ -137,7 +137,7 @@ const preguntas2 = [
             "HIPAA"
         ],
         correctas: [2],
-        explicacion: "El Esquema Nacional de Seguridad (ENS, RD 311/2022) es obligatorio para el sector público en España y sus proveedores[cite: 24]."
+        explicacion: "El Esquema Nacional de Seguridad (ENS, RD 311/2022) es obligatorio para el sector público en España y sus proveedores."
     },
     {
         id: "p031",
@@ -151,7 +151,7 @@ const preguntas2 = [
             "Son sinónimos exactos en el marco metodológico OSSTMM."
         ],
         correctas: [1],
-        explicacion: "La vulnerabilidad es una debilidad; la amenaza es el agente que podría aprovecharla; el riesgo es la probabilidad de que ocurra por su impacto[cite: 48]."
+        explicacion: "La vulnerabilidad es una debilidad; la amenaza es el agente que podría aprovecharla; el riesgo es la probabilidad de que ocurra por su impacto."
     },
     {
         id: "p032",
@@ -165,7 +165,7 @@ const preguntas2 = [
             "Gestor automatizado de parches para Windows."
         ],
         correctas: [1],
-        explicacion: "Nmap/Zenmap es un escáner de red cuyo uso principal es el descubrimiento de hosts, puertos, servicios y SO, y con NSE, detección de vulnerabilidades[cite: 75]."
+        explicacion: "Nmap/Zenmap es un escáner de red cuyo uso principal es el descubrimiento de hosts, puertos, servicios y SO, y con NSE, detección de vulnerabilidades."
     },
     {
         id: "p033",
@@ -207,7 +207,7 @@ const preguntas2 = [
             "La explotación exitosa de una vulnerabilidad de día cero."
         ],
         correctas: [1],
-        explicacion: "Un falso positivo es una alerta de algo que en realidad no es vulnerable (por ejemplo, Nessus marca un servicio como vulnerable pero al comprobarlo está parcheado)[cite: 49]."
+        explicacion: "Un falso positivo es una alerta de algo que en realidad no es vulnerable (por ejemplo, Nessus marca un servicio como vulnerable pero al comprobarlo está parcheado)."
     },
     {
         id: "p036",
@@ -221,7 +221,7 @@ const preguntas2 = [
             "Un protocolo de intercambio de inteligencia de amenazas."
         ],
         correctas: [2],
-        explicacion: "Kali Linux es una distribución de Linux orientada a pentesting que incluye cientos de herramientas de seguridad preinstaladas[cite: 49]."
+        explicacion: "Kali Linux es una distribución de Linux orientada a pentesting que incluye cientos de herramientas de seguridad preinstaladas."
     },
     {
         id: "p037",
@@ -235,7 +235,7 @@ const preguntas2 = [
             "Generar informes ejecutivos para la dirección sin jerga técnica."
         ],
         correctas: [1],
-        explicacion: "El hardening es el proceso de endurecer la configuración de un sistema (desactivar servicios, aplicar parches) para reducir su superficie de ataque[cite: 49]."
+        explicacion: "El hardening es el proceso de endurecer la configuración de un sistema (desactivar servicios, aplicar parches) para reducir su superficie de ataque."
     },
     {
         id: "p038",
@@ -249,7 +249,7 @@ const preguntas2 = [
             "INCIBE"
         ],
         correctas: [2],
-        explicacion: "OWASP es una comunidad abierta de seguridad en aplicaciones que publica el OWASP Top 10 y guías de testing (WSTG)[cite: 50]."
+        explicacion: "OWASP es una comunidad abierta de seguridad en aplicaciones que publica el OWASP Top 10 y guías de testing (WSTG)."
     },
     {
         id: "p039",
@@ -263,7 +263,7 @@ const preguntas2 = [
             "El Exploit es una herramienta defensiva y el Payload es el análisis forense."
         ],
         correctas: [2],
-        explicacion: "El exploit es el código que aprovecha la vulnerabilidad[cite: 48], mientras que el payload es la 'carga útil' que se ejecuta tras aprovecharla para producir el efecto (ej. una shell)[cite: 50]."
+        explicacion: "El exploit es el código que aprovecha la vulnerabilidad, mientras que el payload es la 'carga útil' que se ejecuta tras aprovecharla para producir el efecto (ej. una shell)."
     },
     {
         id: "p040",
@@ -277,6 +277,6 @@ const preguntas2 = [
             "Auditoría de cumplimiento legal"
         ],
         correctas: [1],
-        explicacion: "El pentesting (test de intrusión) es la evaluación autorizada de la seguridad de un sistema simulando ataques reales para encontrar y reportar debilidades[cite: 50]."
+        explicacion: "El pentesting (test de intrusión) es la evaluación autorizada de la seguridad de un sistema simulando ataques reales para encontrar y reportar debilidades."
     }
     ];
