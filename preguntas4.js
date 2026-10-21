@@ -11,7 +11,7 @@ const preguntas4 = [
             "Autenticidad"
         ],
         correctas: [1],
-        explicacion: "La Integridad garantiza la fiabilidad de los datos previniendo cambios indebidos o no autorizados; sus controles habituales incluyen el uso de checksum/hash[cite: 1]."
+        explicacion: "La Integridad garantiza la fiabilidad de los datos previniendo cambios indebidos o no autorizados; sus controles habituales incluyen el uso de checksum/hash."
     },
     {
         id: "p062",
@@ -25,7 +25,7 @@ const preguntas4 = [
             "Las vulnerabilidades inherentes de la tecnología siempre se solucionan modificando las políticas del usuario."
         ],
         correctas: [0, 2],
-        explicacion: "La negligencia del usuario final incluye el uso compartido de credenciales y conexión a redes inseguras[cite: 2]. Las contraseñas débiles y servicios mal configurados son vulnerabilidades de configuración[cite: 2]. Una vulnerabilidad es una debilidad, no una fortaleza[cite: 2]."
+        explicacion: "La negligencia del usuario final incluye el uso compartido de credenciales y conexión a redes inseguras. Las contraseñas débiles y servicios mal configurados son vulnerabilidades de configuración. Una vulnerabilidad es una debilidad, no una fortaleza."
     },
     {
         id: "p063",
@@ -39,7 +39,7 @@ const preguntas4 = [
             "Insider"
         ],
         correctas: [0],
-        explicacion: "El hacker patrocinado por el Estado es contratado por gobiernos para penetrar y obtener información de alto secreto o dañar sistemas de otras naciones[cite: 4]."
+        explicacion: "El hacker patrocinado por el Estado es contratado por gobiernos para penetrar y obtener información de alto secreto o dañar sistemas de otras naciones."
     },
     {
         id: "p064",
@@ -53,7 +53,7 @@ const preguntas4 = [
             "El Script kiddie siempre es contratado por el Estado para realizar auditorías."
         ],
         correctas: [1, 2],
-        explicacion: "El Black Hat (o cracker) usa altas habilidades con fines ilegales/maliciosos[cite: 4]. El Script kiddie apenas tiene habilidades, compromete sistemas con herramientas de terceros y busca notoriedad[cite: 4]."
+        explicacion: "El Black Hat (o cracker) usa altas habilidades con fines ilegales/maliciosos. El Script kiddie apenas tiene habilidades, compromete sistemas con herramientas de terceros y busca notoriedad."
     },
     {
         id: "p065",
@@ -67,7 +67,7 @@ const preguntas4 = [
             "El escaneo de vulnerabilidades automatizado."
         ],
         correctas: [1],
-        explicacion: "La evaluación de un hacker ético busca responder esas tres preguntas clave para entender el riesgo real desde la perspectiva del atacante[cite: 6]."
+        explicacion: "La evaluación de un hacker ético busca responder esas tres preguntas clave para entender el riesgo real desde la perspectiva del atacante."
     },
     {
         id: "p066",
@@ -81,7 +81,7 @@ const preguntas4 = [
             "Un 'Tiger Team' es un equipo que realiza pruebas exclusivas sobre la red Wi-Fi."
         ],
         correctas: [0, 2],
-        explicacion: "El alcance limita la responsabilidad y cruzarlo tiene consecuencias legales[cite: 6]. Las habilidades no técnicas incluyen redacción de informes y resolución de problemas[cite: 7]. El hacker ético ayuda a comprender la seguridad, pero corresponde a la organización implementar las salvaguardas[cite: 6]. Un Tiger Team realiza pruebas a gran escala (red, sistemas e intrusión física), no solo Wi-Fi[cite: 6]."
+        explicacion: "El alcance limita la responsabilidad y cruzarlo tiene consecuencias legales. Las habilidades no técnicas incluyen redacción de informes y resolución de problemas. El hacker ético ayuda a comprender la seguridad, pero corresponde a la organización implementar las salvaguardas. Un Tiger Team realiza pruebas a gran escala (red, sistemas e intrusión física), no solo Wi-Fi."
     },
     {
         id: "p067",
@@ -95,7 +95,7 @@ const preguntas4 = [
             "Las reglas de Firewall de Windows."
         ],
         correctas: [0],
-        explicacion: "La matriz Enterprise contiene 14 categorías de tácticas derivadas de las etapas posteriores de la Cyber Kill Chain, aportando mayor granularidad[cite: 10]."
+        explicacion: "La matriz Enterprise contiene 14 categorías de tácticas derivadas de las etapas posteriores de la Cyber Kill Chain, aportando mayor granularidad."
     },
     {
         id: "p068",
@@ -109,7 +109,7 @@ const preguntas4 = [
             "Jurídicas (penas de cárcel aplicables)."
         ],
         correctas: [0, 2],
-        explicacion: "El modelo extendido añade metacaracterísticas sociopolíticas (relación adversario-víctima, motivación) y tecnológicas (relación infraestructura-capacidad)[cite: 11]."
+        explicacion: "El modelo extendido añade metacaracterísticas sociopolíticas (relación adversario-víctima, motivación) y tecnológicas (relación infraestructura-capacidad)."
     },
     {
         id: "p069",
@@ -123,7 +123,7 @@ const preguntas4 = [
             "Fase 6. Informe"
         ],
         correctas: [2],
-        explicacion: "La Fase 5 (Post-explotación) incluye la escalada de privilegios, la persistencia, el pivoting y el looting[cite: 12]."
+        explicacion: "La Fase 5 (Post-explotación) incluye la escalada de privilegios, la persistencia, el pivoting y el looting."
     },
     {
         id: "p070",
@@ -137,7 +137,7 @@ const preguntas4 = [
             "Seguimiento y revisión: garantizar que los controles son adecuados y evaluar el rendimiento."
         ],
         correctas: [0, 2, 3],
-        explicacion: "Las fases de la gestión de riesgos incluyen la identificación, evaluación, tratamiento, y seguimiento/revisión[cite: 15]. La 'explotación' no es una fase de la gestión de riesgos defensiva."
+        explicacion: "Las fases de la gestión de riesgos incluyen la identificación, evaluación, tratamiento, y seguimiento/revisión. La 'explotación' no es una fase de la gestión de riesgos defensiva."
     },
     {
         id: "p071",
@@ -151,7 +151,7 @@ const preguntas4 = [
             "Malconfiguración"
         ],
         correctas: [1],
-        explicacion: "Las vulnerabilidades de día cero (zero-day) son aquellas desconocidas por el fabricante y sin parche disponible[cite: 17]."
+        explicacion: "Las vulnerabilidades de día cero (zero-day) son aquellas desconocidas por el fabricante y sin parche disponible."
     },
     {
         id: "p072",
@@ -165,7 +165,7 @@ const preguntas4 = [
             "Verificación: clasificar los hallazgos según su CVSS."
         ],
         correctas: [1, 2],
-        explicacion: "En la Remediación se corrigen las vulnerabilidades (parches, mitigación), y en la Verificación se comprueba que dicha corrección ha sido efectiva[cite: 19]. Crear un inventario es Preevaluación, y clasificar por CVSS es Evaluación de riesgos[cite: 19]."
+        explicacion: "En la Remediación se corrigen las vulnerabilidades (parches, mitigación), y en la Verificación se comprueba que dicha corrección ha sido efectiva. Crear un inventario es Preevaluación, y clasificar por CVSS es Evaluación de riesgos."
     },
     {
         id: "p073",
@@ -179,104 +179,104 @@ const preguntas4 = [
             "SOX"
         ],
         correctas: [1],
-        explicacion: "La norma ISO/IEC 27001 regula el Sistema de gestión de la seguridad de la información (SGSI)[cite: 24]."
+        explicacion: "La norma ISO/IEC 27001 regula el Sistema de gestión de la seguridad de la información (SGSI)."
     },
     {
-        id: "p074",
-        tema: "Glosario (Redes Inalámbricas)",
-        dificultad: "dificil",
-        enunciado: "Indica las sentencias correctas acerca de la auditoría y los dispositivos de radiofrecuencia (UD2):",
-        opciones: [
-            "BLE (Bluetooth Low Energy) es una variante de alto consumo usada exclusivamente para enlaces de fibra óptica.",
-            "Flipper Zero es un dispositivo multiherramienta para RF sub-GHz, RFID, NFC, entre otros.",
-            "El ataque de deautenticación (Deauth) envía tramas para expulsar a un cliente de la red Wi-Fi y forzar su reconexión.",
-            "NFC es una tecnología de radio de muy largo alcance (kilómetros)."
+        "id": "p074",
+        "tema": "7. Análisis de vulnerabilidades",
+        "dificultad": "media",
+        "enunciado": "¿Qué diferencia principal existe entre el escaneo de vulnerabilidades activo y el pasivo?",
+        "opciones": [
+            "El escaneo activo observa el tráfico sin interactuar, mientras que el pasivo envía paquetes directos al objetivo.",
+            "El escaneo activo interactúa directamente con el objetivo enviando tráfico, mientras que el pasivo observa el tráfico sin interactuar.",
+            "El escaneo activo requiere credenciales de administrador (autenticado), el pasivo no.",
+            "El escaneo pasivo solo detecta vulnerabilidades web, mientras que el activo detecta vulnerabilidades de red."
         ],
-        correctas: [1, 2],
-        explicacion: "Flipper Zero es para RF sub-GHz, RFID, NFC[cite: 29]. El ataque de Deauth expulsa al cliente para forzar reconexión[cite: 28]. BLE es de *bajo* consumo para IoT, no fibra[cite: 28], y NFC es de *muy corto* alcance[cite: 29]."
+        "correctas": [1],
+        "explicacion": "El escaneo activo interactúa directamente con el objetivo enviando tráfico y observando las respuestas, mientras que el escaneo pasivo observa el tráfico sin interactuar con el objetivo."
     },
     {
-        id: "p075",
-        tema: "Glosario (Redes y Sistemas)",
-        dificultad: "media",
-        enunciado: "¿Qué nombre recibe un sistema señuelo que simula ser vulnerable con el fin de detectar y estudiar el comportamiento de los atacantes?",
-        opciones: [
-            "Firewall",
-            "Honeypot",
-            "IDS",
-            "Proxy"
+        "id": "p075",
+        "tema": "1. Conceptos de seguridad de la información",
+        "dificultad": "dificil",
+        "enunciado": "Según las categorías de ataques de la IATF, ¿cuáles de las siguientes descripciones son correctas?",
+        "opciones": [
+            "Los ataques pasivos alteran los datos en tránsito para engañar al receptor.",
+            "Los ataques de cercanía se realizan en proximidad física al objetivo, como el 'shoulder surfing'.",
+            "Los ataques activos interceptan y monitorizan el tráfico sin alterarlo.",
+            "Los ataques internos los realiza una persona de confianza con acceso físico o lógico privilegiado."
         ],
-        correctas: [1],
-        explicacion: "Un Honeypot es un sistema señuelo que simula ser vulnerable para detectar y estudiar a los atacantes[cite: 32]."
+        "correctas": [1, 3],
+        "explicacion": "Los ataques de cercanía se realizan en proximidad física al objetivo (ej. shoulder surfing, dumpster diving) y los ataques internos los realiza una persona de confianza con acceso privilegiado[cite: 10, 11]. Los ataques pasivos no alteran datos, y los activos sí lo hacen[cite: 9, 10]."
     },
     {
-        id: "p076",
-        tema: "Glosario (Post-Explotación)",
-        dificultad: "dificil",
-        enunciado: "Dentro de la post-explotación, diferencia correctamente los conceptos de 'Pivoting' y 'Movimiento lateral':",
-        opciones: [
-            "El Pivoting usa una máquina comprometida como puente para alcanzar redes a las que no se llegaba directamente.",
-            "El Movimiento lateral consiste en desplazarse de un sistema comprometido a otros dentro de la misma red.",
-            "Ambos conceptos significan exactamente lo mismo y se usan como sinónimos en Metasploit.",
-            "El Pivoting se refiere exclusivamente a la elevación de privilegios en sistemas Linux (root)."
+        "id": "p076",
+        "tema": "7. Análisis de vulnerabilidades",
+        "dificultad": "media",
+        "enunciado": "¿Para qué sirve el sistema EPSS (Exploit Prediction Scoring System) en la gestión de vulnerabilidades?",
+        "opciones": [
+            "Identifica el tipo genérico de debilidad de software, como la inyección SQL.",
+            "Estima la probabilidad de explotación de una vulnerabilidad, complementando al CVSS para priorizar su corrección.",
+            "Asigna un número único y público a cada vulnerabilidad conocida con el formato CVE-AÑO-NÚMERO.",
+            "Sustituye al marco legal europeo sobre protección de datos personales."
         ],
-        correctas: [0, 1],
-        explicacion: "El Pivoting es usar una máquina como puente para alcanzar otras redes[cite: 36], mientras que el Movimiento lateral es desplazarse a otros sistemas dentro de la misma red[cite: 35]. Son conceptos distintos y ninguno se refiere a la escalada de privilegios[cite: 35, 36]."
+        "correctas": [1],
+        "explicacion": "El EPSS (Exploit Prediction Scoring System) estima la probabilidad de explotación de una vulnerabilidad y complementa a CVSS para ayudar a priorizar."
     },
     {
-        id: "p077",
-        tema: "Glosario (Auditoría Web)",
-        dificultad: "media",
-        enunciado: "¿Qué vulnerabilidad puede derivar en ejecución remota de código si la aplicación web reconstruye objetos a partir de datos no confiables o manipulados?",
-        opciones: [
-            "SQL Injection (SQLi)",
-            "Cross-Site Scripting (XSS)",
-            "Deserialización insegura",
-            "IDOR"
+        "id": "p077",
+        "tema": "8. Marco legal y estándares de seguridad",
+        "dificultad": "dificil",
+        "enunciado": "En el contexto del hacking ético y el marco legal español (Código Penal), señala la afirmación correcta sobre el acceso a sistemas:",
+        "opciones": [
+            "El acceso no autorizado solo es delito si el atacante altera o borra información crítica.",
+            "El acceso no autorizado es punible aunque no se cause daño ni se copie nada, ya que la frontera es el consentimiento explícito.",
+            "La existencia de un sistema mal configurado equivale a una autorización tácita para auditarlo.",
+            "Actuar bajo las directrices del hacking ético exime automáticamente de responsabilidad penal, incluso sin un contrato firmado previo."
         ],
-        correctas: [2],
-        explicacion: "La deserialización insegura es una vulnerabilidad al reconstruir objetos a partir de datos no confiables, que puede derivar en ejecución de código[cite: 37]."
+        "correctas": [1],
+        "explicacion": "El acceso no autorizado ya es punible (Art. 197 CP) aunque no se cause daño ni se copie nada. La frontera siempre es el consentimiento explícito; la existencia de una vulnerabilidad o un sistema mal configurado no equivale a una autorización para entrar[cite: 31, 32]."
     },
     {
-        id: "p078",
-        tema: "Módulos complementarios",
-        dificultad: "dificil",
-        enunciado: "Selecciona las afirmaciones correctas sobre criptografía e IAM (Gestión de Identidades):",
-        opciones: [
-            "El cifrado simétrico (ej. AES) usa una sola clave para cifrar y descifrar, y suele ser más rápido.",
-            "El cifrado asimétrico usa un par de claves (pública y privada) y resuelve el problema del reparto de claves.",
-            "IAM (Identity and Access Management) es un sistema exclusivo para redes Wi-Fi locales.",
-            "La responsabilidad compartida en la nube indica que el cliente no tiene que configurar ninguna medida de seguridad."
+        "id": "p078",
+        "tema": "4. Metodologías y marcos de hacking",
+        "dificultad": "media",
+        "enunciado": "¿Qué son los Indicadores de Compromiso (IoC) dentro del análisis de amenazas y respuesta a incidentes?",
+        "opciones": [
+            "Son la inteligencia de amenazas definitiva que bloquea ataques automáticamente en el firewall.",
+            "Son las pistas, artefactos y fragmentos forenses que evidencian una posible intrusión.",
+            "Son las credenciales por defecto que los atacantes usan para comprometer sistemas heredados.",
+            "Son normativas legales europeas que obligan a las empresas a reportar incidentes de seguridad."
         ],
-        correctas: [0, 1],
-        explicacion: "El cifrado simétrico usa una sola clave (rápido, ej. AES), y el asimétrico usa par pública/privada resolviendo el reparto[cite: 39]. IAM es la gestión de identidades y permisos, especialmente en la nube[cite: 39]. La responsabilidad compartida implica que el cliente SÍ debe proteger sus datos y configuraciones[cite: 40]."
+        "correctas": [1],
+        "explicacion": "Los Indicadores de Compromiso (IoC) son las pistas, artefactos y fragmentos forenses que evidencian una posible intrusión. No son inteligencia en sí mismos, pero conforman la materia prima del proceso de inteligencia de amenazas."
     },
     {
-        id: "p079",
-        tema: "Glosario (General)",
-        dificultad: "media",
-        enunciado: "¿Qué utilidad proporciona el atributo 'SameSite' al configurarlo en una cookie de sesión?",
-        opciones: [
-            "Impide que la cookie sea leída mediante JavaScript.",
-            "Garantiza que la cookie solo viaje por canales cifrados (HTTPS).",
-            "Limita el envío de la cookie en peticiones entre distintos sitios, mitigando ataques CSRF.",
-            "Fuerza al usuario a introducir un segundo factor de autenticación."
+        "id": "p079",
+        "tema": "3. Hacking ético",
+        "dificultad": "media",
+        "enunciado": "¿Cuál de las siguientes afirmaciones sobre el uso de la Inteligencia Artificial (IA) en el hacking ético es cierta, según el temario de la UD1?",
+        "opciones": [
+            "La IA es perfecta y reemplazará por completo la experiencia, la creatividad y el pensamiento crítico de los hackers éticos humanos.",
+            "No existe ninguna herramienta de IA que pueda integrarse en la terminal para asistir en tareas de pentesting.",
+            "La IA complementa la experiencia humana automatizando tareas repetitivas y mejorando el análisis, pero no sustituye el juicio contextual humano.",
+            "El RGPD permite subir sin restricciones los datos reales de los clientes a servicios de IA en la nube para obtener mejores informes."
         ],
-        correctas: [2],
-        explicacion: "El atributo SameSite limita el envío de la cookie entre sitios cruzados, mitigando los ataques CSRF[cite: 38]."
+        "correctas": [2],
+        "explicacion": "La IA complementa, no reemplaza, la experiencia humana, ya que no puede sustituir la creatividad ni el juicio contextual. Automatiza tareas y mejora la detección de amenazas, pero requiere supervisión. Subir datos reales a servicios en la nube puede incumplir el NDA y el RGPD."
     },
     {
-        id: "p080",
-        tema: "Módulos complementarios",
-        dificultad: "dificil",
-        enunciado: "Sobre las técnicas de evasión y persistencia, ¿qué afirmaciones son ciertas?",
-        opciones: [
-            "Un rootkit es un malware diseñado para ocultar su presencia y mantener un acceso privilegiado en el sistema.",
-            "Los Alternate Data Streams (ADS) en NTFS permiten ocultar información o ejecutables dentro de un fichero aparentemente inofensivo.",
-            "La 'sal' (salt) criptográfica facilita el uso de rainbow tables para crackear contraseñas más rápido.",
-            "La persistencia asegura el acceso al sistema solo si la máquina no se reinicia."
+        "id": "p080",
+        "tema": "6. Controles de seguridad de la información",
+        "dificultad": "dificil",
+        "enunciado": "El Aseguramiento de la Información (IA) busca garantizar la integridad, disponibilidad, confidencialidad y autenticidad de la información. ¿Qué procesos ayudan a lograr este aseguramiento?",
+        "opciones": [
+            "Usar únicamente el cifrado de grado militar en todos los servidores de la empresa, ignorando las políticas de red.",
+            "Desarrollar políticas y directrices, identificar vulnerabilidades, planificar recursos y formar al personal.",
+            "Contratar un 'Tiger Team' de forma obligatoria cada semana para auditar el código fuente.",
+            "Realizar la Certificación y Acreditación (C&A) y aplicar estrategias de autenticación de red y usuario."
         ],
-        correctas: [0, 1],
-        explicacion: "Un rootkit oculta su presencia y mantiene acceso privilegiado[cite: 36]. Los ADS en NTFS permiten ocultar datos en flujos alternativos[cite: 34]. La sal *anula* la eficacia de las rainbow tables[cite: 36], y la persistencia mantiene el acceso *incluso* si el sistema se reinicia[cite: 35]."
+        "correctas": [1, 3],
+        "explicacion": "Los procesos que ayudan a lograr el Aseguramiento de la Información (IA) incluyen: desarrollar políticas y directrices, diseñar estrategias de autenticación de red y usuario, identificar vulnerabilidades y amenazas, planificar recursos, aplicar controles, realizar Certificación y Acreditación (C&A) y formar al personal."
     }
 ];
