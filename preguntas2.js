@@ -141,142 +141,142 @@ const preguntas2 = [
     },
     {
         id: "p031",
-        tema: "Glosario (Redes Inalámbricas)",
+        tema: "Glosario (UD1)",
         dificultad: "dificil",
-        enunciado: "Señala las afirmaciones correctas sobre tecnologías y ataques inalámbricos:",
+        enunciado: "¿Cuál es la diferencia precisa entre amenaza, vulnerabilidad y riesgo?",
         opciones: [
-            "PMF (Protected Management Frames) mitiga los ataques de deautenticación clásicos.",
-            "WPA3 incluye SAE y es resistente a ataques offline.",
-            "El handshake WPA2 siempre se crackea en menos de 5 minutos, independientemente de la contraseña.",
-            "El ataque PMKID requiere que obligatoriamente haya un cliente conectado al punto de acceso."
+            "La amenaza es la debilidad, la vulnerabilidad es el agente, y el riesgo el impacto.",
+            "La vulnerabilidad es una debilidad; la amenaza es el agente que podría aprovecharla; el riesgo es la probabilidad de que ocurra por su impacto.",
+            "El riesgo es la falta de parches, la amenaza es el CVSS, y la vulnerabilidad es el atacante.",
+            "Son sinónimos exactos en el marco metodológico OSSTMM."
         ],
-        correctas: [0, 1],
-        explicacion: "PMF (802.11w) mitiga los ataques de deauth[cite: 30], y WPA3-SAE es resistente a ataques offline[cite: 30]. El PMKID permite crackear la clave *sin* cliente conectado[cite: 30], y el tiempo de crackeo del handshake depende enteramente del diccionario y la robustez de la clave[cite: 29]."
+        correctas: [1],
+        explicacion: "La vulnerabilidad es una debilidad; la amenaza es el agente que podría aprovecharla; el riesgo es la probabilidad de que ocurra por su impacto[cite: 48]."
     },
     {
         id: "p032",
-        tema: "Glosario (Pentesting de Redes)",
+        tema: "7. Análisis de vulnerabilidades",
         dificultad: "media",
-        enunciado: "¿Qué técnica se utiliza para deducir el sistema operativo de la máquina objetivo observando el comportamiento de su pila TCP/IP?",
+        enunciado: "¿Cuál es el uso principal de la herramienta Nmap/Zenmap según la UD1?",
         opciones: [
-            "Banner grabbing",
-            "Fingerprinting",
-            "ARP spoofing",
-            "Fuzzing"
+            "Sistema de prevención de intrusiones (IPS).",
+            "Escáner de red para descubrimiento de hosts, puertos, servicios y SO.",
+            "Analizador de protocolos para capturar tráfico.",
+            "Gestor automatizado de parches para Windows."
         ],
         correctas: [1],
-        explicacion: "El Fingerprinting sirve para identificar con precisión el sistema operativo y las versiones, por ejemplo, deduciendo que es Windows 7 SP1 por el comportamiento de su pila TCP/IP[cite: 32]."
+        explicacion: "Nmap/Zenmap es un escáner de red cuyo uso principal es el descubrimiento de hosts, puertos, servicios y SO, y con NSE, detección de vulnerabilidades[cite: 75]."
     },
     {
         id: "p033",
-        tema: "Glosario (Pentesting de Redes)",
+        tema: "4. Metodologías y marcos de hacking",
         dificultad: "dificil",
-        enunciado: "¿Qué vulnerabilidad histórica de SMB permite la ejecución remota de código en sistemas Windows y fue empleada por el ransomware WannaCry?",
+        enunciado: "¿Qué caracteriza al estándar PTES (Penetration Testing Execution Standard)?",
         opciones: [
-            "Log4Shell",
-            "Heartbleed",
-            "EternalBlue (MS17-010)",
-            "BlueKeep"
+            "Define cómo medir la superficie de ataque de forma puramente matemática.",
+            "Es un catálogo de debilidades de software que incluye el Top 25.",
+            "Define las 7 fases de un pentest profesional, desde la interacción previa al informe.",
+            "Es una normativa europea de protección de datos personales."
         ],
         correctas: [2],
-        explicacion: "EternalBlue (MS17-010) es una vulnerabilidad crítica de SMB en Windows que permite ejecución remota de código, famosa por ser el exploit de WannaCry en 2017[cite: 31]."
+        explicacion: "El PTES es un estándar que define las 7 fases de un pentest profesional, desde la preinteracción hasta el informe[cite: 50, 65]."
     },
     {
         id: "p034",
-        tema: "Glosario (Post-Explotación)",
+        tema: "Glosario (UD1)",
         dificultad: "media",
-        enunciado: "¿Cómo se llama el payload avanzado de Metasploit que ofrece una potente consola interactiva para la post-explotación en la víctima?",
+        enunciado: "¿Qué metodología de testing de seguridad aporta un método medible y repetible para auditar operativamente un sistema?",
         opciones: [
-            "Meterpreter",
-            "NetExec",
-            "BloodHound",
-            "Responder"
+            "OSSTMM",
+            "RGPD",
+            "Kali Linux",
+            "CVSS"
         ],
         correctas: [0],
-        explicacion: "Meterpreter es el payload avanzado de Metasploit que da una consola interactiva y potente en la víctima[cite: 35]."
+        explicacion: "OSSTMM es un manual de metodología de testing de seguridad que aporta un método medible y repetible para auditar[cite: 50, 65]."
     },
     {
         id: "p035",
-        tema: "Glosario (Post-Explotación)",
+        tema: "Glosario (UD1)",
         dificultad: "dificil",
-        enunciado: "Selecciona las afirmaciones verdaderas sobre ataques y técnicas en Directorio Activo (AD):",
+        enunciado: "En el análisis de vulnerabilidades, ¿qué representa un 'Falso positivo'?",
         opciones: [
-            "BloodHound automatiza inyecciones SQL masivas contra controladores de dominio.",
-            "Pass-the-Hash (PtH) permite autenticarse usando el hash NTLM sin conocer la contraseña en claro.",
-            "Kerberoasting solicita tickets de servicio para crackear offline las contraseñas de cuentas de servicio.",
-            "LLMNR es un protocolo seguro por defecto imposible de envenenar."
+            "Una vulnerabilidad crítica que el sistema no ha detectado.",
+            "Una alerta de algo que en realidad no es vulnerable (ej. servicio parcheado marcado como vulnerable).",
+            "Un error en el escáner que impide realizar la conexión a la base de datos.",
+            "La explotación exitosa de una vulnerabilidad de día cero."
         ],
-        correctas: [1, 2],
-        explicacion: "PtH permite usar directamente el hash NTLM para acceder[cite: 35]. Kerberoasting solicita tickets TGS para crackear contraseñas de servicio offline[cite: 34]. BloodHound mapea relaciones (no inyecta SQL)[cite: 34], y LLMNR es vulnerable y se envenena frecuentemente con Responder[cite: 35]."
+        correctas: [1],
+        explicacion: "Un falso positivo es una alerta de algo que en realidad no es vulnerable (por ejemplo, Nessus marca un servicio como vulnerable pero al comprobarlo está parcheado)[cite: 49]."
     },
     {
         id: "p036",
-        tema: "Glosario (Auditoría Web)",
+        tema: "Glosario (UD1)",
         dificultad: "media",
-        enunciado: "¿Qué vulnerabilidad permite a un atacante obligar al servidor a realizar peticiones a destinos internos elegidos por él, eludiendo firewalls perimetrales?",
+        enunciado: "¿Qué es Kali Linux en el contexto del pentesting?",
         opciones: [
-            "SSRF (Server-Side Request Forgery)",
-            "CSRF (Cross-Site Request Forgery)",
-            "XSS (Cross-Site Scripting)",
-            "Command Injection"
+            "Un escáner comercial de vulnerabilidades web.",
+            "Una base de datos de exploits pública.",
+            "Una distribución orientada a pentesting que incluye cientos de herramientas de seguridad.",
+            "Un protocolo de intercambio de inteligencia de amenazas."
         ],
-        correctas: [0],
-        explicacion: "SSRF obliga al servidor a hacer peticiones a destinos elegidos por el atacante, como un endpoint interno, siendo muy peligrosa en entornos cloud[cite: 38]."
+        correctas: [2],
+        explicacion: "Kali Linux es una distribución de Linux orientada a pentesting que incluye cientos de herramientas de seguridad preinstaladas[cite: 49]."
     },
     {
         id: "p037",
-        tema: "Glosario (Auditoría Web)",
+        tema: "Glosario (UD1)",
         dificultad: "dificil",
-        enunciado: "Para proteger las cookies de sesión contra robo mediante inyección de JavaScript (XSS), ¿qué atributo se debe configurar obligatoriamente en la cabecera Set-Cookie?",
+        enunciado: "¿Qué persigue el proceso de 'Hardening'?",
         opciones: [
-            "SameSite=Strict",
-            "Secure",
-            "HttpOnly",
-            "Anti-CSRF-Token"
+            "Descifrar contraseñas mediante fuerza bruta.",
+            "Endurecer la configuración de un sistema para reducir su superficie de ataque.",
+            "Incrementar la puntuación CVSS de un activo informático.",
+            "Generar informes ejecutivos para la dirección sin jerga técnica."
         ],
-        correctas: [2],
-        explicacion: "El atributo HttpOnly impide que la cookie sea accesible mediante JavaScript, mitigando así el riesgo de robo por ataques XSS[cite: 37]."
+        correctas: [1],
+        explicacion: "El hardening es el proceso de endurecer la configuración de un sistema (desactivar servicios, aplicar parches) para reducir su superficie de ataque[cite: 49]."
     },
     {
         id: "p038",
-        tema: "Módulos complementarios",
+        tema: "Glosario (UD1)",
         dificultad: "media",
-        enunciado: "¿Cómo se denomina al mecanismo que oculta la existencia misma de un mensaje o dato (por ejemplo, dentro de una imagen), a diferencia de la criptografía que solo oculta su contenido?",
+        enunciado: "La comunidad abierta que publica el 'Top 10' de riesgos más críticos en aplicaciones web y guías de testing se denomina:",
         opciones: [
-            "Fingerprinting",
-            "Esteganografía",
-            "Fuzzing",
-            "Hashing"
+            "MITRE",
+            "NIST",
+            "OWASP",
+            "INCIBE"
         ],
-        correctas: [1],
-        explicacion: "La esteganografía consiste en ocultar la existencia misma de un mensaje (por ejemplo, con steghide dentro de una imagen)[cite: 39]."
+        correctas: [2],
+        explicacion: "OWASP es una comunidad abierta de seguridad en aplicaciones que publica el OWASP Top 10 y guías de testing (WSTG)[cite: 50]."
     },
     {
         id: "p039",
-        tema: "Módulos complementarios",
+        tema: "Glosario (UD1)",
         dificultad: "dificil",
-        enunciado: "Respecto al 'Adversary-in-the-Middle (AITM)' y la suplantación de correo, ¿qué afirmaciones son correctas?",
+        enunciado: "Diferencia los conceptos 'Exploit' y 'Payload' en la terminología de Hacking Ético:",
         opciones: [
-            "AITM captura credenciales y también la cookie de sesión autenticada, saltándose el 2FA tradicional.",
-            "Para defenderse del AITM, el 2FA por SMS es 100% efectivo e invulnerable.",
-            "Mecanismos como SPF, DKIM y DMARC dificultan la suplantación del dominio del remitente en el correo electrónico.",
-            "DMARC se utiliza exclusivamente para cifrar el contenido del correo electrónico."
+            "Son sinónimos absolutos y se usan indistintamente.",
+            "El Payload es el código que busca la vulnerabilidad, el Exploit es la máquina atacante.",
+            "El Exploit aprovecha la vulnerabilidad para obtener acceso, y el Payload es la carga útil que se ejecuta después para producir el efecto buscado.",
+            "El Exploit es una herramienta defensiva y el Payload es el análisis forense."
         ],
-        correctas: [0, 2],
-        explicacion: "AITM es un phishing avanzado que roba credenciales y la cookie de sesión, saltándose métodos como el 2FA por SMS[cite: 39]. SPF, DKIM y DMARC son mecanismos para evitar la suplantación del remitente (no para cifrar)[cite: 40]."
+        correctas: [2],
+        explicacion: "El exploit es el código que aprovecha la vulnerabilidad[cite: 48], mientras que el payload es la 'carga útil' que se ejecuta tras aprovecharla para producir el efecto (ej. una shell)[cite: 50]."
     },
     {
         id: "p040",
-        tema: "Glosario (Auditoría Web)",
+        tema: "Glosario (UD1)",
         dificultad: "media",
-        enunciado: "¿Qué herramienta usarías para realizar 'fuzzing' y descubrir automáticamente directorios o parámetros ocultos en un servidor web?",
+        enunciado: "La evaluación autorizada de la seguridad de un sistema simulando ataques reales para encontrar y reportar debilidades se conoce como:",
         opciones: [
-            "Burp Suite (modo Proxy)",
-            "sqlmap",
-            "ffuf o gobuster",
-            "hashcat"
+            "Zero-day testing",
+            "Pentesting (test de intrusión)",
+            "Ingeniería inversa",
+            "Auditoría de cumplimiento legal"
         ],
-        correctas: [2],
-        explicacion: "ffuf o gobuster se usan para fuzzing, probando automáticamente muchas entradas desde un diccionario para encontrar rutas y recursos ocultos[cite: 36]."
+        correctas: [1],
+        explicacion: "El pentesting (test de intrusión) es la evaluación autorizada de la seguridad de un sistema simulando ataques reales para encontrar y reportar debilidades[cite: 50]."
     }
-];
+    ];
