@@ -1,17 +1,17 @@
 const preguntas6 = [
     {
         id: "p101",
-        tema: "Glosario (Pentesting de Redes)",
+        tema: "3. Hacking ético",
         dificultad: "media",
-        enunciado: "¿Qué herramienta funciona como un buscador local en Kali Linux para consultar rápidamente la base de datos de Exploit-DB?",
+        enunciado: "¿Cuál de estas herramientas es un asistente de IA integrado en la terminal del ecosistema CEH v13?",
         opciones: [
-            "searchsploit",
-            "Nmap",
-            "bettercap",
-            "sqlmap"
+            "OpenVAS",
+            "ShellGPT",
+            "GFI LanGuard",
+            "Nessus"
         ],
-        correctas: [0],
-        explicacion: "searchsploit es un buscador local de exploits de la base de datos Exploit-DB, útil para localizar exploits tras identificar versiones vulnerables[cite: 34]."
+        correctas: [1],
+        explicacion: "ShellGPT es un asistente de IA integrado en la terminal mencionado como parte del ecosistema CEH v13."
     },
     {
         id: "p102",
@@ -25,77 +25,77 @@ const preguntas6 = [
             "Zero-day, Legacy y Malconfigurados."
         ],
         correctas: [0],
-        explicacion: "Los IoC se distinguen en indicadores atómicos (IP, correos), computados (hashes, expresiones regulares) y de comportamiento (agrupaciones lógicas de los anteriores)[cite: 10]."
+        explicacion: "Los IoC se distinguen en indicadores atómicos (IP, correos), computados (hashes, expresiones regulares) y de comportamiento (agrupaciones lógicas de los anteriores)."
     },
     {
         id: "p103",
-        tema: "Glosario (Auditoría Web)",
+        tema: "6. Controles de seguridad de la información",
         dificultad: "media",
-        enunciado: "¿Qué tipo de cortafuegos específico se sitúa delante de una aplicación web para filtrar ataques como inyecciones SQL o XSS?",
+        enunciado: "En los procesos de Aseguramiento de la Información (IA), ¿qué significan las siglas C&A?",
         opciones: [
-            "WAF (Web Application Firewall)",
-            "IDS de red",
-            "Filtro MAC",
-            "Honeypot"
+            "Cifrado y Autenticación",
+            "Certificación y Acreditación",
+            "Control y Auditoría",
+            "Clasificación y Análisis"
         ],
-        correctas: [0],
-        explicacion: "Un WAF (Web Application Firewall) es un cortafuegos específico que filtra ataques web (SQLi, XSS) antes de que lleguen a la aplicación[cite: 39]."
+        correctas: [1],
+        explicacion: "Uno de los procesos para lograr la Información Assurance (IA) es realizar Certificación y Acreditación (C&A)."
     },
     {
         id: "p104",
-        tema: "Glosario (Auditoría Web)",
+        tema: "6. Controles de seguridad de la información",
         dificultad: "dificil",
-        enunciado: "Sobre la vulnerabilidad XSS (Cross-Site Scripting), selecciona las afirmaciones verdaderas:",
+        enunciado: "Selecciona las fórmulas correctas para calcular o conceptualizar el Nivel de Riesgo:",
         opciones: [
-            "XSS inyecta scripts en una web para que se ejecuten en el navegador de otros usuarios.",
-            "Sus tres variantes principales son reflejado, almacenado y DOM.",
-            "Se mitiga configurando la base de datos para no aceptar consultas preparadas (Prepared Statements).",
-            "La sanitización, CSP (Content Security Policy) y la cookie HttpOnly son mecanismos de mitigación para XSS."
+            "RIESGO = Amenazas × Vulnerabilidades × Impacto.",
+            "RIESGO = Amenaza + Impacto - Vulnerabilidad.",
+            "Nivel de Riesgo = Consecuencia × Probabilidad.",
+            "RIESGO = Tácticas × Técnicas × Procedimientos."
         ],
-        correctas: [0, 1, 3],
-        explicacion: "XSS inyecta scripts para que se ejecuten en el navegador de otros (variantes: reflejado, almacenado, DOM)[cite: 39]. Se mitiga con sanitización, CSP y la cookie HttpOnly[cite: 39]. Las consultas preparadas son la mitigación para inyecciones SQL, no XSS[cite: 39]."
+        correctas: [0, 2],
+        explicacion: "Las fórmulas válidas son: RIESGO = Amenazas × Vulnerabilidades × Impacto; y Nivel de Riesgo = Consecuencia × Probabilidad."
     },
     {
         id: "p105",
-        tema: "Módulos complementarios",
+        tema: "7. Análisis de vulnerabilidades",
         dificultad: "media",
-        enunciado: "En la ingeniería social, ¿cómo se denomina al engaño por correo electrónico que va dirigido y personalizado a una víctima específica (ej. un directivo)?",
+        enunciado: "Los fallos inherentes a la propia arquitectura de Windows o Linux se catalogan como vulnerabilidades de tipo:",
         opciones: [
-            "Spam",
-            "Phishing",
-            "Spear phishing",
-            "Vishing"
+            "Defectos del sistema operativo",
+            "Malconfiguración",
+            "Defectos de diseño de red",
+            "Contraseñas por defecto"
         ],
-        correctas: [2],
-        explicacion: "El spear phishing es un tipo de engaño por correo que va dirigido y personalizado, a diferencia del phishing genérico[cite: 40]."
+        correctas: [0],
+        explicacion: "Los fallos inherentes al SO se catalogan como Defectos del sistema operativo."
     },
     {
         id: "p106",
-        tema: "Módulos complementarios",
+        tema: "7. Análisis de vulnerabilidades",
         dificultad: "dificil",
-        enunciado: "En auditorías de entornos Cloud, ¿qué principio explica que la mayoría de brechas son por errores de configuración del cliente?",
+        enunciado: "La proliferación de dependencias externas y sistemas aislados o 'en la sombra' se clasifica como una vulnerabilidad debida a:",
         opciones: [
-            "El cifrado simétrico.",
-            "El modelo de responsabilidad compartida.",
-            "El principio de confianza cero (Zero Trust).",
-            "La esteganografía en la nube."
+            "Gestión deficiente de parches.",
+            "Vulnerabilidades de aplicación.",
+            "Riesgos de terceros y activos no documentados.",
+            "Gestión inadecuada de certificados."
         ],
-        correctas: [1],
-        explicacion: "El modelo de responsabilidad compartida reparte la seguridad entre el proveedor (hardware) y el cliente (datos y configuraciones); la mayoría de brechas cloud son errores de configuración del cliente[cite: 41]."
+        correctas: [2],
+        explicacion: "Las dependencias externas y sistemas dispersos o 'en la sombra' se clasifican como Riesgos de terceros y activos no documentados."
     },
     {
         id: "p107",
-        tema: "Glosario (Post-Explotación)",
+        tema: "7. Análisis de vulnerabilidades",
         dificultad: "media",
-        enunciado: "¿En qué archivo almacenan los sistemas operativos Linux modernos las representaciones irreversibles (hashes) de las contraseñas de los usuarios?",
+        enunciado: "A diferencia del escaneo pasivo, el escaneo activo de vulnerabilidades implica:",
         opciones: [
-            "SAM",
-            "NTDS.dit",
-            "/etc/passwd",
-            "/etc/shadow"
+            "Observar el tráfico usando Wireshark en silencio.",
+            "Instalar un rootkit en la máquina víctima.",
+            "Que el escáner interactúa directamente con el objetivo enviando tráfico y observando las respuestas.",
+            "Extraer información exclusivamente de bases de datos OSINT."
         ],
-        correctas: [3],
-        explicacion: "Windows guarda hashes NTLM en la SAM, pero Linux guarda los hashes de contraseñas en /etc/shadow[cite: 34]."
+        correctas: [2],
+        explicacion: "El escaneo activo interactúa directamente con el objetivo enviando tráfico y observando las respuestas, mientras que el pasivo solo observa."
     },
     {
         id: "p108",
@@ -109,7 +109,7 @@ const preguntas6 = [
             "Riesgo Bajo: Tomar medidas preventivas para mitigar sus efectos."
         ],
         correctas: [1, 3],
-        explicacion: "Un nivel Extremo exige medidas inmediatas para combatir el riesgo (peligro inminente)[cite: 14]. Un riesgo Bajo requiere tomar medidas preventivas para mitigar sus efectos[cite: 14]."
+        explicacion: "Un nivel Extremo exige medidas inmediatas para combatir el riesgo (peligro inminente). Un riesgo Bajo requiere tomar medidas preventivas para mitigar sus efectos."
     },
     {
         id: "p109",
@@ -137,91 +137,91 @@ const preguntas6 = [
             "Solución basada en inferencia (inference-based): Adapta el escaneo en función del inventario de protocolos que encuentra."
         ],
         correctas: [2, 3],
-        explicacion: "La solución basada en árbol aplica distintas estrategias a cada máquina, y la basada en inferencia adapta el escaneo a lo que encuentra[cite: 22]. Basada en producto es la que se instala en la red, y basada en servicio es la ofrecida por terceros, justo al revés de lo que afirman las dos primeras opciones[cite: 22]."
+        explicacion: "La solución basada en árbol aplica distintas estrategias a cada máquina, y la basada en inferencia adapta el escaneo a lo que encuentra. Basada en producto es la que se instala en la red, y basada en servicio es la ofrecida por terceros, justo al revés de lo que afirman las dos primeras opciones."
     },
     {
         id: "p111",
-        tema: "Glosario (Redes Inalámbricas)",
+        tema: "7. Análisis de vulnerabilidades",
         dificultad: "media",
-        enunciado: "¿Qué función de las redes Wi-Fi, diseñada para una configuración rápida mediante un PIN de 8 dígitos, es históricamente vulnerable a ataques de fuerza bruta?",
+        enunciado: "Una solución de evaluación que aplica distintas estrategias a cada máquina o componente específico se denomina:",
         opciones: [
-            "WPA3",
-            "WPS",
-            "PMF",
-            "PMKID"
+            "Basada en inferencia",
+            "Basada en árbol (tree-based)",
+            "Basada en producto",
+            "Basada en servicio"
         ],
         correctas: [1],
-        explicacion: "WPS es una función de configuración rápida de Wi-Fi mediante PIN, históricamente vulnerable a fuerza bruta y cuya desactivación se recomienda[cite: 30]."
+        explicacion: "La solución basada en árbol (tree-based) aplica distintas estrategias a cada máquina/componente."
     },
     {
         id: "p112",
-        tema: "Glosario (Redes Inalámbricas)",
+        tema: "7. Análisis de vulnerabilidades",
         dificultad: "dificil",
-        enunciado: "Respecto a las mitigaciones y evoluciones en seguridad Wi-Fi, marca las afirmaciones ciertas:",
+        enunciado: "¿Qué componentes suelen formar parte de un informe profesional de evaluación de vulnerabilidades?",
         opciones: [
-            "WEP es actualmente el estándar recomendado para domótica e IoT.",
-            "PMF (Protected Management Frames) corresponde al estándar 802.11w y mitiga ataques de deauth.",
-            "WPA3 incluye el protocolo SAE y resiste ataques de diccionario offline.",
-            "El modo monitor es una defensa de los puntos de acceso para evitar suplantaciones (Evil Twin)."
+            "Resumen ejecutivo y alcance de la evaluación.",
+            "Lista de contraseñas root en texto plano extraídas de la red.",
+            "Hallazgos detallados (CVE/CVSS) y análisis de causa raíz.",
+            "Políticas de sanciones para los empleados que fallaron al configurar el servidor."
         ],
-        correctas: [1, 2],
-        explicacion: "PMF (802.11w) mitiga los ataques de deauth[cite: 30]. WPA3 usa SAE y es resistente a ataques offline[cite: 30]. WEP está obsoleto y roto[cite: 30], y el modo monitor es una función de la tarjeta de red del atacante/auditor para capturar tráfico, no una defensa del AP[cite: 29]."
+        correctas: [0, 2],
+        explicacion: "Un informe habitual incluye resumen ejecutivo, alcance, metodología, hallazgos (CVSS/CVE), análisis de causa raíz y recomendaciones."
     },
     {
         id: "p113",
-        tema: "Glosario (Auditoría Web)",
+        tema: "8. Marco legal y estándares de seguridad",
         dificultad: "media",
-        enunciado: "¿Cuál es la función principal de la herramienta Burp Suite durante la auditoría de aplicaciones web?",
+        enunciado: "El estándar internacional orientado a la protección de la información sanitaria en Estados Unidos es:",
         opciones: [
-            "Actuar como Proxy de interceptación para inspeccionar y modificar peticiones entre el navegador y el servidor.",
-            "Escanear la red local en busca de puertos SMB abiertos.",
-            "Craquear contraseñas Wi-Fi mediante fuerza bruta de diccionarios.",
-            "Automatizar el análisis de código fuente."
+            "PCI DSS",
+            "HIPAA",
+            "SOX",
+            "FISMA"
         ],
-        correctas: [0],
-        explicacion: "Burp Suite es un proxy de auditoría web que intercepta, inspecciona y modifica las peticiones entre el navegador y el servidor[cite: 37]."
+        correctas: [1],
+        explicacion: "HIPAA es la norma aplicable a la protección de la información sanitaria en EE. UU.."
     },
     {
         id: "p114",
-        tema: "Glosario (Post-Explotación)",
+        tema: "8. Marco legal y estándares de seguridad",
         dificultad: "dificil",
-        enunciado: "En la fase de escalada de privilegios, un atacante se topa con un mecanismo que le solicita permiso explícito para ejecutar una acción como Administrador, o encuentra un script llamado 'winPEAS'. ¿Qué es cierto en estos escenarios?",
+        enunciado: "Según el marco legal expuesto en la unidad, ¿qué acción penaliza el Artículo 400 del Código Penal?",
         opciones: [
-            "El mecanismo que pide confirmación en Windows es el UAC (User Account Control).",
-            "winPEAS es un script que explota automáticamente las vulnerabilidades sin intervención humana.",
-            "En entornos Linux, el atacante buscaría abusar de permisos SUID para ejecutar binarios como su propietario (frecuentemente root).",
-            "linPEAS detiene y elimina el malware en servidores Linux."
+            "La revelación de secretos empresariales por parte de la prensa.",
+            "La interceptación de comunicaciones Wi-Fi.",
+            "La fabricación o tenencia de programas destinados a cometer delitos informáticos.",
+            "El borrado negligente de bases de datos por un empleado."
         ],
-        correctas: [0, 2],
-        explicacion: "El UAC de Windows pide confirmación para elevar privilegios[cite: 36]. En Linux se abusa del permiso especial SUID para ejecutar binarios como su propietario (root)[cite: 36]. winPEAS/linPEAS automatizan la búsqueda de vías de escalada (no explotan ni eliminan malware, solo buscan y alertan)[cite: 36]."
+        correctas: [2],
+        explicacion: "El Art. 400 CP penaliza la fabricación o tenencia de programas destinados a cometer delitos informáticos (estafa, daños, etc.)."
     },
     {
         id: "p115",
-        tema: "Glosario (Pentesting de Redes)",
+        tema: "8. Marco legal y estándares de seguridad",
         dificultad: "media",
-        enunciado: "¿Cómo se llama el formato de reto de ciberseguridad en el que hay que encontrar evidencias ocultas o comprometer máquinas para obtener una 'bandera'?",
+        enunciado: "¿Qué norma estadounidense regula la Gestión de la seguridad de la información federal?",
         opciones: [
-            "Role Play",
-            "CTF (Capture The Flag)",
-            "Bug Bounty",
-            "Red Teaming"
+            "FISMA",
+            "PCI DSS",
+            "NIS2",
+            "ISO 27001"
         ],
-        correctas: [1],
-        explicacion: "Un CTF (Capture The Flag) es un reto de seguridad en el que hay que 'capturar banderas' resolviendo pruebas técnicas, como comprometer una máquina y leer un fichero flag.txt[cite: 31]."
+        correctas: [0],
+        explicacion: "FISMA regula la gestión de la seguridad de la información federal en EE. UU.."
     },
     {
         id: "p116",
-        tema: "Glosario (Post-Explotación)",
+        tema: "8. Marco legal y estándares de seguridad",
         dificultad: "dificil",
-        enunciado: "¿Qué relación existe entre las 'Rainbow tables' y el uso de la 'Sal' (salt) criptográfica en el almacenamiento de contraseñas?",
+        enunciado: "Diferencia correctamente el ámbito de aplicación del ENS y del RGPD en el marco europeo y español:",
         opciones: [
-            "La sal facilita que los hashes sean siempre idénticos y, por tanto, acelera el uso de las Rainbow tables.",
-            "Una Rainbow table es una tabla precalculada de hashes que acelera el crackeo.",
-            "La sal (salt) es un valor aleatorio que se añade a la contraseña antes de hashearla, lo que anula la eficacia de las Rainbow tables.",
-            "Las Rainbow tables son útiles únicamente contra contraseñas con sal y el cifrado WEP."
+            "El ENS es obligatorio solo para el sector privado; el RGPD aplica al sector público y privado.",
+            "El RGPD y la LOPDGDD exigen licitud, minimización, confidencialidad y responsabilidad proactiva en datos personales.",
+            "El ENS (Esquema Nacional de Seguridad) es obligatorio para el sector público y sus proveedores.",
+            "Ambas normativas solo protegen la información financiera de tarjetas de pago."
         ],
         correctas: [1, 2],
-        explicacion: "Una Rainbow table es una tabla precalculada de hashes que acelera el crackeo[cite: 36]. La sal añade un valor aleatorio a cada contraseña antes del hash, haciendo que contraseñas iguales tengan hashes distintos, lo cual anula completamente el uso de las Rainbow tables precalculadas[cite: 36]."
+        explicacion: "El ENS es obligatorio para el sector público y sus proveedores. El RGPD/LOPDGDD protegen datos personales exigiendo licitud, minimización y responsabilidad proactiva."
     },
     {
         id: "p117",
@@ -235,48 +235,48 @@ const preguntas6 = [
             "Art. 264 y ss. CP"
         ],
         correctas: [1],
-        explicacion: "El Art. 248 y siguientes del CP regulan la estafa informática y el fraude[cite: 24]."
+        explicacion: "El Art. 248 y siguientes del CP regulan la estafa informática y el fraude."
     },
     {
         id: "p118",
-        tema: "Glosario (Auditoría Web)",
+        tema: "3. Hacking ético",
         dificultad: "dificil",
-        enunciado: "En la auditoría de bases de datos desde aplicaciones web, identifica la herramienta y su uso de forma correcta:",
+        enunciado: "En relación a las reglas éticas y morales de un auditor (White Hat), ¿qué afirmaciones son correctas?",
         opciones: [
-            "Burp Suite se utiliza para automatizar la extracción masiva de registros SQL.",
-            "sqlmap es una herramienta que automatiza la detección y explotación de inyecciones SQL.",
-            "ffuf / gobuster descubren inyecciones SQL encriptadas en protocolos Wi-Fi.",
-            "sqlmap puede, entre otras acciones, enumerar bases de datos si se le proporciona un punto de inyección válido."
+            "Se puede ejecutar un ataque de Denegación de Servicio (DoS) si se considera necesario para demostrar la vulnerabilidad, sin pactarlo.",
+            "Es necesario firmar un acuerdo de confidencialidad (NDA).",
+            "Nunca debe iniciarse la evaluación sin un documento legal firmado que otorgue permiso expreso.",
+            "El auditor asume la responsabilidad de solucionar el código fuente de los fallos encontrados."
         ],
-        correctas: [1, 3],
-        explicacion: "sqlmap automatiza la detección y explotación de inyecciones SQL y puede enumerar bases de datos (ej. usando --dbs)[cite: 38]. Burp se usa como proxy[cite: 37], y ffuf/gobuster se utilizan para fuzzing y descubrimiento de directorios, no inyecciones SQL[cite: 37]."
+        correctas: [1, 2],
+        explicacion: "Se requiere autorización expresa legal, firmar un NDA y mantener confidencialidad. Un DoS solo se ejecuta si se ha pactado previamente en el alcance."
     },
     {
         id: "p119",
-        tema: "Módulos complementarios",
+        tema: "4. Metodologías y marcos de hacking",
         dificultad: "media",
-        enunciado: "¿Cómo se llama el ataque en el que un actor malicioso toma el control de una sesión ya autenticada robando su identificador (ej. una cookie), sin necesidad de conocer la contraseña?",
+        enunciado: "El uso indebido de PowerShell, la actividad inusual en cuentas privilegiadas o las anomalías geográficas son ejemplos de:",
         opciones: [
-            "Session hijacking (Secuestro de sesión)",
-            "Phishing",
-            "Jamming",
-            "ARP Spoofing"
+            "Indicadores de Compromiso (IoC) y comportamientos del adversario.",
+            "Vulnerabilidades de diseño heredadas.",
+            "Fases iniciales del Modelo Diamante.",
+            "Políticas de hardening preventivo."
         ],
         correctas: [0],
-        explicacion: "El Session hijacking (secuestro de sesión) consiste en tomar el control de una sesión ya autenticada robando su identificador (ej. mediante XSS), sin conocer la contraseña[cite: 41]."
+        explicacion: "Son comportamientos típicos a vigilar e IoC habituales que evidencian una posible intrusión[cite: 63, 64]."
     },
     {
         id: "p120",
-        tema: "Glosario (Auditoría Web)",
+        tema: "4. Metodologías y marcos de hacking",
         dificultad: "dificil",
-        enunciado: "Compara las vulnerabilidades SSRF (Server-Side Request Forgery) y CSRF (Cross-Site Request Forgery). Selecciona las diferencias correctas:",
+        enunciado: "Relaciona correctamente la categoría del IoC con el artefacto forense correspondiente:",
         opciones: [
-            "SSRF obliga al servidor a hacer peticiones a destinos internos elegidos por el atacante.",
-            "CSRF obliga al navegador de la víctima a realizar acciones no deseadas aprovechando su sesión activa.",
-            "SSRF ataca siempre y exclusivamente la cookie de sesión del administrador del sitio.",
-            "CSRF se utiliza para enumerar puertos internos del servidor donde se aloja la base de datos."
+            "De correo electrónico: Nombres de fichero y DLLs inyectadas.",
+            "Basados en el host: Claves de registro alteradas y mutex detectados.",
+            "De comportamiento: Ejecución de comandos codificados en PowerShell.",
+            "De red: Archivos adjuntos y asuntos engañosos."
         ],
-        correctas: [0, 1],
-        explicacion: "SSRF obliga al servidor a realizar peticiones a destinos elegidos por el atacante[cite: 39]. CSRF obliga al navegador de la víctima a realizar acciones no deseadas usando su sesión activa[cite: 37]. El SSRF no ataca la cookie del administrador, y el CSRF no enumera puertos internos[cite: 37, 39]."
+        correctas: [1, 2],
+        explicacion: "Los basados en el host incluyen ficheros, registros, DLLs y mutex. Los de comportamiento incluyen la ejecución remota o de PowerShell. Los correos incluyen remitentes y adjuntos (no red), y red abarca IPs y dominios (no adjuntos)."
     }
 ];
