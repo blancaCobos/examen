@@ -11,7 +11,7 @@ const preguntas1 = [
             "Concienciación, Integridad y Accesibilidad"
         ],
         correctas: [1],
-        explicacion: "La seguridad de la información se sustenta en cinco elementos, donde los tres primeros forman la clásica tríada CIA: Confidencialidad, Integridad y Disponibilidad[cite: 1]."
+        explicacion: "La seguridad de la información se sustenta en cinco elementos, donde los tres primeros forman la clásica tríada CIA: Confidencialidad, Integridad y Disponibilidad."
     },
     {
         id: "p002",
@@ -25,7 +25,7 @@ const preguntas1 = [
             "Disponibilidad"
         ],
         correctas: [2],
-        explicacion: "El No repudio es el elemento que garantiza que el emisor no pueda negar el envío ni el receptor la recepción, siendo los controles habituales las firmas digitales[cite: 1]."
+        explicacion: "El No repudio es el elemento que garantiza que el emisor no pueda negar el envío ni el receptor la recepción, siendo los controles habituales las firmas digitales."
     },
     {
         id: "p003",
@@ -39,7 +39,7 @@ const preguntas1 = [
             "La autenticidad es un concepto limitado exclusivamente al inicio de sesión."
         ],
         correctas: [1, 2],
-        explicacion: "La autenticación comprueba quién eres, la autorización qué puedes hacer una vez identificado, y el no repudio garantiza que no puedas negar tus acciones[cite: 1]. La autenticidad es más amplia que el mero inicio de sesión, afectando a datos y transacciones[cite: 1]."
+        explicacion: "La autenticación comprueba quién eres, la autorización qué puedes hacer una vez identificado, y el no repudio garantiza que no puedas negar tus acciones. La autenticidad es más amplia que el mero inicio de sesión, afectando a datos y transacciones."
     },
     {
         id: "p004",
@@ -53,7 +53,7 @@ const preguntas1 = [
             "Ingeniería Social, Malware y Redes Botnet"
         ],
         correctas: [1],
-        explicacion: "Un ataque puede conceptualizarse como la combinación de un motivo, un método y una vulnerabilidad, formulado como: Ataque = Motivación (objetivo) + Método (TTP) + Vulnerabilidad[cite: 1]."
+        explicacion: "Un ataque puede conceptualizarse como la combinación de un motivo, un método y una vulnerabilidad, formulado como: Ataque = Motivación (objetivo) + Método (TTP) + Vulnerabilidad."
     },
     {
         id: "p005",
@@ -67,7 +67,7 @@ const preguntas1 = [
             "Los procedimientos son los métodos técnicos para lograr resultados intermedios, y las tácticas la secuencia lógica."
         ],
         correctas: [1],
-        explicacion: "Las tácticas son la estrategia global que sigue el adversario de principio a fin, mientras que los procedimientos son la secuencia sistemática de acciones que ejecuta. Los métodos técnicos intermedios corresponden a las técnicas[cite: 2]."
+        explicacion: "Las tácticas son la estrategia global que sigue el adversario de principio a fin, mientras que los procedimientos son la secuencia sistemática de acciones que ejecuta. Los métodos técnicos intermedios corresponden a las técnicas."
     },
     {
         id: "p006",
@@ -81,7 +81,7 @@ const preguntas1 = [
             "Ataques Internos"
         ],
         correctas: [2],
-        explicacion: "Los ataques pasivos interceptan y monitorizan el tráfico sin alterarlo y son muy difíciles de detectar al no haber interacción activa. Ejemplos incluyen el footprinting y el sniffing[cite: 2]."
+        explicacion: "Los ataques pasivos interceptan y monitorizan el tráfico sin alterarlo y son muy difíciles de detectar al no haber interacción activa. Ejemplos incluyen el footprinting y el sniffing."
     },
     {
         id: "p007",
@@ -95,7 +95,7 @@ const preguntas1 = [
             "Los ataques de distribución manipulan hardware o software antes de su instalación, en la cadena de suministro."
         ],
         correctas: [1, 3],
-        explicacion: "Los ataques de cercanía se realizan en proximidad física (shoulder surfing, dumpster diving)[cite: 3]. Los de distribución manipulan hardware/software antes de la instalación, es decir, en la cadena de suministro[cite: 3]. Los activos sí alteran datos, y los internos los realiza una persona de confianza, no alguien ajeno[cite: 3]."
+        explicacion: "Los ataques de cercanía se realizan en proximidad física (shoulder surfing, dumpster diving). Los de distribución manipulan hardware/software antes de la instalación, es decir, en la cadena de suministro. Los activos sí alteran datos, y los internos los realiza una persona de confianza, no alguien ajeno."
     },
     {
         id: "p008",
@@ -109,7 +109,7 @@ const preguntas1 = [
             "Red Hat"
         ],
         correctas: [0],
-        explicacion: "Un Blue Hat es un profesional externo contratado puntualmente para evaluar un producto antes de su lanzamiento[cite: 4]."
+        explicacion: "Un Blue Hat es un profesional externo contratado puntualmente para evaluar un producto antes de su lanzamiento."
     },
     {
         id: "p009",
@@ -123,7 +123,7 @@ const preguntas1 = [
             "Ambos perfiles tienen siempre la intención explícita de causar daño económico."
         ],
         correctas: [1, 2],
-        explicacion: "El Gray Hat trabaja ofensiva y defensivamente, actuando a veces sin permiso pero sin ánimo delictivo[cite: 4]. El Red Hat adopta tácticas agresivas contra los black hat para neutralizarlos y no sigue reglas éticas estrictas[cite: 4]."
+        explicacion: "El Gray Hat trabaja ofensiva y defensivamente, actuando a veces sin permiso pero sin ánimo delictivo. El Red Hat adopta tácticas agresivas contra los black hat para neutralizarlos y no sigue reglas éticas estrictas."
     },
     {
         id: "p010",
@@ -137,7 +137,7 @@ const preguntas1 = [
             "Un acta notarial de los hallazgos."
         ],
         correctas: [2],
-        explicacion: "Ninguna actividad de hacking ético debe iniciarse sin un documento legal firmado que otorgue permiso expreso[cite: 6]."
+        explicacion: "Ninguna actividad de hacking ético debe iniciarse sin un documento legal firmado que otorgue permiso expreso."
     },
     {
         id: "p011",
@@ -151,7 +151,7 @@ const preguntas1 = [
             "La IA solo puede usarse en entornos aislados y está prohibida en evaluaciones de vulnerabilidades."
         ],
         correctas: [1, 2],
-        explicacion: "La IA automatiza tareas repetitivas y ayuda a detectar amenazas avanzadas[cite: 7]. Como precaución crítica, no se deben introducir datos reales de un cliente, credenciales o información sensible en la nube por riesgo de incumplir el NDA y el RGPD[cite: 7]."
+        explicacion: "La IA automatiza tareas repetitivas y ayuda a detectar amenazas avanzadas. Como precaución crítica, no se deben introducir datos reales de un cliente, credenciales o información sensible en la nube por riesgo de incumplir el NDA y el RGPD."
     },
     {
         id: "p012",
@@ -165,7 +165,7 @@ const preguntas1 = [
             "Se identifican, miden y clasifican las vulnerabilidades del sistema."
         ],
         correctas: [1],
-        explicacion: "En la fase 4 (Mantenimiento del acceso) el atacante retiene el control, sube/manipula datos e instala software malicioso para mantener un perfil bajo. El borrado de rastros pertenece a la fase 5[cite: 9]."
+        explicacion: "En la fase 4 (Mantenimiento del acceso) el atacante retiene el control, sube/manipula datos e instala software malicioso para mantener un perfil bajo. El borrado de rastros pertenece a la fase 5."
     },
     {
         id: "p013",
@@ -179,7 +179,7 @@ const preguntas1 = [
             "La 'Armamentización' es la acción final donde se destruyen los servidores de la organización."
         ],
         correctas: [0, 2],
-        explicacion: "La fase de Entrega envía el arma a la víctima mediante correos, USB, etc.[cite: 9]. En la fase Comando y Control (C2) se establece un canal bidireccional cifrado para la explotación remota[cite: 9]. La explotación aprovecha la vulnerabilidad, y las acciones finales corresponden a 'Acciones sobre los objetivos'[cite: 9]."
+        explicacion: "La fase de Entrega envía el arma a la víctima mediante correos, USB, etc.. En la fase Comando y Control (C2) se establece un canal bidireccional cifrado para la explotación remota. La explotación aprovecha la vulnerabilidad, y las acciones finales corresponden a 'Acciones sobre los objetivos'."
     },
     {
         id: "p014",
@@ -193,7 +193,7 @@ const preguntas1 = [
             "Confidencialidad, Integridad, Disponibilidad y No repudio"
         ],
         correctas: [2],
-        explicacion: "El 'evento Diamante' consta de cuatro características básicas ordenadas por sus relaciones: Adversario, Víctima, Capacidad e Infraestructura[cite: 11]."
+        explicacion: "El 'evento Diamante' consta de cuatro características básicas ordenadas por sus relaciones: Adversario, Víctima, Capacidad e Infraestructura."
     },
     {
         id: "p015",
@@ -207,7 +207,7 @@ const preguntas1 = [
             "No son obligatorios si el pentest no encontró ninguna vulnerabilidad severa."
         ],
         correctas: [1],
-        explicacion: "Se distinguen dos entregables: el informe ejecutivo, dirigido a la dirección sin jerga técnica y orientado al negocio, y el informe técnico, para el equipo TI detallando y permitiendo reproducir cada hallazgo[cite: 12]."
+        explicacion: "Se distinguen dos entregables: el informe ejecutivo, dirigido a la dirección sin jerga técnica y orientado al negocio, y el informe técnico, para el equipo TI detallando y permitiendo reproducir cada hallazgo."
     },
     {
         id: "p016",
@@ -221,7 +221,7 @@ const preguntas1 = [
             "Implementar controles de seguridad elimina siempre por completo el nivel de riesgo de un activo."
         ],
         correctas: [0, 2],
-        explicacion: "Una fórmula del riesgo es: RIESGO = Amenazas × Vulnerabilidades × Impacto[cite: 14]. Además, la matriz de riesgo escala la probabilidad frente a la consecuencia para visualizar y comparar riesgos[cite: 14]. Las medidas de control reducen el nivel, pero rara vez lo eliminan por completo[cite: 14]."
+        explicacion: "Una fórmula del riesgo es: RIESGO = Amenazas × Vulnerabilidades × Impacto. Además, la matriz de riesgo escala la probabilidad frente a la consecuencia para visualizar y comparar riesgos. Las medidas de control reducen el nivel, pero rara vez lo eliminan por completo."
     },
     {
         id: "p017",
@@ -235,7 +235,7 @@ const preguntas1 = [
             "EPSS"
         ],
         correctas: [2],
-        explicacion: "CVE (Common Vulnerabilities and Exposures) es el identificador único de cada vulnerabilidad conocida, como por ejemplo CVE-2021-44228[cite: 17]."
+        explicacion: "CVE (Common Vulnerabilities and Exposures) es el identificador único de cada vulnerabilidad conocida, como por ejemplo CVE-2021-44228."
     },
     {
         id: "p018",
@@ -249,7 +249,7 @@ const preguntas1 = [
             "Los falsos positivos confirman que el exploit funcionará siempre, mientras el negativo indica mitigaciones presentes."
         ],
         correctas: [1],
-        explicacion: "Un falso positivo es una alerta de algo que en realidad no es vulnerable, mientras que un falso negativo es una vulnerabilidad real que la herramienta no llega a detectar[cite: 26]."
+        explicacion: "Un falso positivo es una alerta de algo que en realidad no es vulnerable, mientras que un falso negativo es una vulnerabilidad real que la herramienta no llega a detectar."
     },
     {
         id: "p019",
@@ -263,7 +263,7 @@ const preguntas1 = [
             "Esquema Nacional de Seguridad (ENS)"
         ],
         correctas: [0],
-        explicacion: "La Directiva NIS2 (UE 2022/2555) es la normativa que regula las obligaciones de ciberseguridad de sectores esenciales e importantes[cite: 24]."
+        explicacion: "La Directiva NIS2 (UE 2022/2555) es la normativa que regula las obligaciones de ciberseguridad de sectores esenciales e importantes."
     },
     {
         id: "p020",
@@ -277,6 +277,6 @@ const preguntas1 = [
             "Es el contrato económico; salirse de él solo implica una penalización financiera."
         ],
         correctas: [0],
-        explicacion: "El alcance (scope) es el conjunto de activos, técnicas y tiempos que la autorización permite probar[cite: 50]. Salirse de él supone el suspenso en el curso y, en la realidad, un delito[cite: 51]."
+        explicacion: "El alcance (scope) es el conjunto de activos, técnicas y tiempos que la autorización permite probar. Salirse de él supone el suspenso en el curso y, en la realidad, un delito."
     }
 ];
