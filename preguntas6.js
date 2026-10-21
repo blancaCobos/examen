@@ -84,18 +84,18 @@ const preguntas6 = [
         explicacion: "Las dependencias externas y sistemas dispersos o 'en la sombra' se clasifican como Riesgos de terceros y activos no documentados."
     },
     {
-        id: "p107",
-        tema: "7. Análisis de vulnerabilidades",
-        dificultad: "media",
-        enunciado: "A diferencia del escaneo pasivo, el escaneo activo de vulnerabilidades implica:",
-        opciones: [
+        "id": "p107",
+        "tema": "7. Análisis de vulnerabilidades",
+        "dificultad": "media",
+        "enunciado": "A diferencia del escaneo pasivo, el escaneo activo de vulnerabilidades implica:",
+        "opciones": [
             "Observar el tráfico usando Wireshark en silencio.",
-            "Instalar un rootkit en la máquina víctima.",
+            "Instalar un backdoor en la máquina víctima.",
             "Que el escáner interactúa directamente con el objetivo enviando tráfico y observando las respuestas.",
             "Extraer información exclusivamente de bases de datos OSINT."
         ],
-        correctas: [2],
-        explicacion: "El escaneo activo interactúa directamente con el objetivo enviando tráfico y observando las respuestas, mientras que el pasivo solo observa."
+        "correctas": [2],
+        "explicacion": "El escaneo activo interactúa directamente con el objetivo enviando tráfico y observando las respuestas, mientras que el pasivo solo observa[cite: 23]."
     },
     {
         id: "p108",
